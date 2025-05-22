@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze Transcripts</title>
+    <style>
+        body {
+            flex-direction: column;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #f3e5f5, #e8eaf6); /* Soft, professional gradient */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .dashboard-container {
+            background-color: #fff;
+            border-radius: 12px;
+            border: none;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+            padding: 60px;
+            width: 80%; /* Make the dashboard-container take up 90% of the available width */
+            max-width: none; /* Override max-width to allow full 90% width */
+            min-width: 900px; /* Set a minimum width for the container */
+            text-align: center;
+        }
+
+        .page-header {
+            font-family: 'Montserrat', sans-serif; /* Modern, professional font */
+            font-size: 1.5em;
+            color: #37474f; /* Darker, more sophisticated color */
+            margin-bottom: 10px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+        
+        }
+
+        .page-header span {
+            color: #5c6bc0; /* Accent color */
+        }
+
+        /* Add more specific styles for the analyze transcripts page here */
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+            opacity: 0.7;
+        }
+
+        .grey-box {
+            background-color: #f0f0f0;
+            border-radius: 12px; /* More rounded corners */
+            padding: 20px;
+            min-height: 600px;
+            text-align: left;
+            margin-top: 0px; /* Decrease margin-top */
+            flex: 3; /* Occupies 30% of the space */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+        }
+
+        .smaller-box {
+            background-color: #f0f0f0; /* Make the smaller box the same color as the grey box */
+            border-radius: 12px; /* More rounded corners */
+            padding: 20px;
+            min-height: 600px;
+            text-align: left;
+            margin-left: 20px;
+            flex: 7; /* Occupies 70% of the space */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+        }
+
+        .smaller-box-header {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2em;
+            color: #37474f;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            text-align: center;
+            text-decoration: none; /* Remove default underline */
+            border-bottom: 3px solid #5c6bc0; /* Add a colored border */
+            padding-bottom: 5px; /* Adjust spacing */
+            display: inline-block; /* Make the border only as wide as the text */
+        }
+
+        .smaller-box-header span {
+            color: #5c6bc0;
+        }
+
+        .grey-box-header {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2em;
+            color: #37474f;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            text-align: center;
+            text-decoration: none; /* Remove default underline */
+            border-bottom: 3px solid #5c6bc0; /* Add a colored border */
+            padding-bottom: 5px; /* Adjust spacing */
+            display: inline-block; /* Make the border only as wide as the text */
+        }
+
+        .grey-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: top;
+        }
+
+        .grey-box-header span {
+            color: #5c6bc0;
+        }
+
+        .flex-container {
+            display: flex;
+            /* height: 90vh;  Make the container flex to take up 90% of the available screen space */
+        }
+
+        .transparent-box {
+            background-color: transparent;
+            border: 1px solid transparent;
+            border-radius: 12px;
+            height: calc(100% - 60px); /* Adjust height to fill remaining space */
+            margin-top: 10px;
+        }
+
+        .grey-box form input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .grey-box form button {
+            background-color: #5c6bc0;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .grey-box form button:hover {
+            background-color: #3f51b5;
+        }
+
+        .grey-box form select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            appearance: none; /* Remove default arrow */
+            background-color: #fff;
+            background-image: url('data:image/svg+xml;utf8,<svg fill="%235c6bc0" height="12" width="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path d="M2 0L0 2h4zm0 5L0 3h4z"/></svg>');
+            background-repeat: no-repeat;
+            background-position-x: 95%;
+            background-position-y: 50%;
+            padding-right: 25px;
+        }
+
+        .grey-box form select:focus {
+            outline: none;
+            border-color: #5c6bc0;
+        }
+
+        /* New styles for transcript selection dropdown */
+        .transcript-select {
+            font-size: 1em;
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content: flex-start; align-items: center; width: 100%; padding-left: 10%;">
+        <div class="page-header" style="display: flex; align-items: center;">
+            <h1 class="page-header" style="margin-right: 24px;"><span>Analyze</span> Transcripts</h1>
+            <!-- Transcript selection dropdown -->
+            <select id="transcriptSelect" class="transcript-select">
+                <option value="recording.srt">Recording 1</option>
+                <option value="recording (2).srt">Recording 2</option>
+                <option value="recording (3).srt">Recording 3</option>
+                <option value="recording (4).srt">Recording 4</option>
+                <option value="audio1.srt">Audio 1</option>
+                <option value="audio2.srt">Audio 2</option>
+                <option value="audio3.srt">Audio 3</option>
+                <option value="audio4.srt">Audio 4</option>
+                <!-- Add more transcript files as needed -->
+            </select>
+        </div>
+    </div>
+    <div class="dashboard-container">
+        <div class="flex-container">
+            <div class="grey-box" style="flex: 2;">
+                <h2 class="grey-box-header"><span>Keyword</span> Selection:</h2>
+                <form id="analysisForm">
+                    <label for="keywords">Keywords (comma-separated):</label><br>
+                    <input type="text" id="keywords" name="keywords"><br><br>
+                    <button type="button" onclick="analyzeDocument()">Analyze</button>
+					<br><br>
+					<label for="keywordSelect">Choose a Keyword:</label>
+					<select id="keywordSelect" name="keywordSelect" onchange="selectKeyword()" style="margin-top: 15px;">
+						<option value="">Select a keyword</option>
+						<option value="Whole Lunar Disc">Whole Lunar Disc</option>
+                        <option value="Earthrise">Earthrise</option>
+                        <option value="Sunrise">Sunrise</option>
+                        <option value="Sunset">Sunset</option>
+                        <option value="Earthset">Earthset</option>
+                        <option value="Dawn Terminator">Dawn Terminator</option>
+                        <option value="Dusk Terminator">Dusk Terminator</option>
+                        <option value="Impact Flashes">Impact Flashes</option>
+                        <option value="Western Limb">Western Limb</option>
+                        <option value="Eastern Limb">Eastern Limb</option>
+                        <option value="--Other PAO Space Event">--Other PAO Space Event</option>
+                        <option value="--Crew Reflection / View what you want">--Crew Reflection / View what you want</option>
+                        <option value="Aitken Crater">Aitken Crater</option>
+                        <option value="Necho Crater Albedo Anomaly">Necho Crater Albedo Anomaly</option>
+                        <option value="Anaxagoras Crater">Anaxagoras Crater</option>
+                        <option value="Antoniadi Crater">Antoniadi Crater</option>
+                        <option value="Apollo Basin">Apollo Basin</option>
+                        <option value="Apollo 11 Landing Site">Apollo 11 Landing Site</option>
+                        <option value="Apollo 12 Landing Site">Apollo 12 Landing Site</option>
+                        <option value="Apollo 16 Landing Site">Apollo 16 Landing Site</option>
+                        <option value="Apollo 17 Landing Site">Apollo 17 Landing Site</option>
+                        <option value="Aristarchus Plateau">Aristarchus Plateau</option>
+                        <option value="Atlas Crater">Atlas Crater</option>
+                        <option value="Billy Crater">Billy Crater</option>
+                        <option value="Bose and Bhabha Crater Region">Bose and Bhabha Crater Region</option>
+                        <option value="Buys-Ballot Crater">Buys-Ballot Crater</option>
+                        <option value="Byrgius A Crater">Byrgius A Crater</option>
+                        <option value="Campbell Crater Volcanic Fill">Campbell Crater Volcanic Fill</option>
+                        <option value="Catena Artamonov">Catena Artamonov</option>
+                        <option value="Catena Sylvester">Catena Sylvester</option>
+                        <option value="Chaplygin B Crater">Chaplygin B Crater</option>
+                        <option value="Clavius Crater">Clavius Crater</option>
+                        <option value="Cleomedes Crater">Cleomedes Crater</option>
+                        <option value="Compton Crater">Compton Crater</option>
+                        <option value="Compton-Belkovich Volcanic Region">Compton-Belkovich Volcanic Region</option>
+                        <option value="The Connecting Ridge">The Connecting Ridge</option>
+                        <option value="Copernicus Crater">Copernicus Crater</option>
+                        <option value="Mare Crisium">Mare Crisium</option>
+                        <option value="Crookes Crater">Crookes Crater</option>
+                        <option value="Crüger Crater">Crüger Crater</option>
+                        <option value="de Gerlache-Kocher Massif">de Gerlache-Kocher Massif</option>
+                        <option value="de Gerlache Crater">de Gerlache Crater</option>
+                        <option value="De La Rue Crater">De La Rue Crater</option>
+                        <option value="Deutsch Crater">Deutsch Crater</option>
+                        <option value="Denning-proximal Rayed Crater">Denning-proximal Rayed Crater</option>
+                        <option value="Dewar Crater Region">Dewar Crater Region</option>
+                        <option value="Sverdrup Rise Landing Region">Sverdrup Rise Landing Region</option>
+                        <option value="Dorsa Ewing">Dorsa Ewing</option>
+                        <option value="Dufay Albedo Anomaly">Dufay Albedo Anomaly</option>
+                        <option value="South Pole Region">South Pole Region</option>
+                        <option value="Euclides Crater">Euclides Crater</option>
+                        <option value="Flamsteed P Crater">Flamsteed P Crater</option>
+                        <option value="Gauss Crater">Gauss Crater</option>
+                        <option value="Giordano Bruno Crater">Giordano Bruno Crater</option>
+                        <option value="Glushko Crater">Glushko Crater</option>
+                        <option value="Goldschmidt Crater">Goldschmidt Crater</option>
+                        <option value="Grigg E Crater">Grigg E Crater</option>
+                        <option value="Grimaldi Crater">Grimaldi Crater</option>
+                        <option value="Gruithuisen Domes">Gruithuisen Domes</option>
+                        <option value="Fra Mauro Crater">Fra Mauro Crater</option>
+                        <option value="Hansteen Crater">Hansteen Crater</option>
+                        <option value="Haworth Crater Region">Haworth Crater Region</option>
+                        <option value="Herigonius Eta and Pi">Herigonius Eta and Pi</option>
+                        <option value="Hermite Crater">Hermite Crater</option>
+                        <option value="Mare Ingenii and Swirls">Mare Ingenii and Swirls</option>
+                        <option value="Isaev Crater Volcanic Fill">Isaev Crater Volcanic Fill</option>
+                        <option value="Jackson Crater">Jackson Crater</option>
+                        <option value="Distant Jackson Ray in SPA">Distant Jackson Ray in SPA</option>
+                        <option value="Jenner Crater">Jenner Crater</option>
+                        <option value="Jules Verne Crater">Jules Verne Crater</option>
+                        <option value="Kepler Crater">Kepler Crater</option>
+                        <option value="Kocher Crater Region">Kocher Crater Region</option>
+                        <option value="Kohlschütter Crater Volcanic Fill">Kohlschütter Crater Volcanic Fill</option>
+                        <option value="Kohlschütter V Crater">Kohlschütter V Crater</option>
+                        <option value="Korolev Basin">Korolev Basin</option>
+                        <option value="Koval'skiy Y Crater">Koval'skiy Y Crater</option>
+                        <option value="Kundt Crater">Kundt Crater</option>
+                        <option value="Lacus Luxuriae Region">Lacus Luxuriae Region</option>
+                        <option value="Larmor Q Crater">Larmor Q Crater</option>
+                        <option value="Lassell Massif">Lassell Massif</option>
+                        <option value="Mons Mouton">Mons Mouton</option>
+                        <option value="Leibnitz Crater">Leibnitz Crater</option>
+                        <option value="Lyot Crater">Lyot Crater</option>
+                        <option value="Mairan T Dome">Mairan T Dome</option>
+                        <option value="Mandel'shtam F Crater">Mandel'shtam F Crater</option>
+                        <option value="Mare Australe">Mare Australe</option>
+                        <option value="Mare Fecunditatis Wrinkle Ridges">Mare Fecunditatis Wrinkle Ridges</option>
+                        <option value="Mare Marginis">Mare Marginis</option>
+                        <option value="Marius Hills">Marius Hills</option>
+                        <option value="Mees Y Crater">Mees Y Crater</option>
+                        <option value="Mirzakhani Crater">Mirzakhani Crater</option>
+                        <option value="Mons Hansteen">Mons Hansteen</option>
+                        <option value="Mons Malapert">Mons Malapert</option>
+                        <option value="Montes Riphaues">Montes Riphaues</option>
+                        <option value="Montes Cordillera">Montes Cordillera</option>
+                        <option value="Montes Rook">Montes Rook</option>
+                        <option value="Moore F Crater">Moore F Crater</option>
+                        <option value="Moscoviense Basin">Moscoviense Basin</option>
+                        <option value="Mare Nectaris">Mare Nectaris</option>
+                        <option value="Neper Crater">Neper Crater</option>
+                        <option value="Nobile Crater Region">Nobile Crater Region</option>
+                        <option value="Chandler Dark Albedo Area">Chandler Dark Albedo Area</option>
+                        <option value="Idel'son L Rise Landing Region">Idel'son L Rise Landing Region</option>
+                        <option value="Oceanus Procellarum">Oceanus Procellarum</option>
+                        <option value="Ohm Crater">Ohm Crater</option>
+                        <option value="Oppenheimer Basin">Oppenheimer Basin</option>
+                        <option value="Orientale Basin">Orientale Basin</option>
+                        <option value="Paraskevopoulous Q Crater">Paraskevopoulous Q Crater</option>
+                        <option value="Peary Crater">Peary Crater</option>
+                        <option value="Peek Crater">Peek Crater</option>
+                        <option value="Pierazzo Crater">Pierazzo Crater</option>
+                        <option value="Plato Crater">Plato Crater</option>
+                        <option value="Poincaré Crater Region">Poincaré Crater Region</option>
+                        <option value="Proclus Crater">Proclus Crater</option>
+                        <option value="Pythagoras Crater">Pythagoras Crater</option>
+                        <option value="Rayet Y Crater">Rayet Y Crater</option>
+                        <option value="Reiner Gamma">Reiner Gamma</option>
+                        <option value="Rimae Sirsalis">Rimae Sirsalis</option>
+                        <option value="Rozhdestvenskiy Crater">Rozhdestvenskiy Crater</option>
+                        <option value="Rupes Atlai">Rupes Atlai</option>
+                        <option value="Rupes Recta">Rupes Recta</option>
+                        <option value="Ryder Crater">Ryder Crater</option>
+                        <option value="Schiller-Schikard Crater Region">Schiller-Schikard Crater Region</option>
+                        <option value="Schmidt Crater">Schmidt Crater</option>
+                        <option value="Schrödinger Basin">Schrödinger Basin</option>
+                        <option value="Sinus Aestueem Dark Spots">Sinus Aestueem Dark Spots</option>
+                        <option value="South Pole-Aitken Basin">South Pole-Aitken Basin</option>
+                        <option value="Sulpicius Gallus">Sulpicius Gallus</option>
+                        <option value="Seleucus Crater">Seleucus Crater</option>
+                        <option value="Slater Plain Artemis Region">Slater Plain Artemis Region</option>
+                        <option value="Stefan L Crater">Stefan L Crater</option>
+                        <option value="Sundman J Crater">Sundman J Crater</option>
+                        <option value="Sundman V Crater">Sundman V Crater</option>
+                        <option value="Thales Crater">Thales Crater</option>
+                        <option value="Tharp Crater">Tharp Crater</option>
+                        <option value="Orientale Annular Ring">Orientale Annular Ring</option>
+                        <option value="Tsiolkovskiy Crater">Tsiolkovskiy Crater</option>
+                        <option value="Tycho Crater">Tycho Crater</option>
+                        <option value="NW Orientale Rayed Crater">NW Orientale Rayed Crater</option>
+                        <option value="Atlas Region Rayed Crater">Atlas Region Rayed Crater</option>
+                        <option value="Vavilov Crater">Vavilov Crater</option>
+                        <option value="Virtanen Crater">Virtanen Crater</option>
+                        <option value="Tranquilitatis and Serenitatis Region">Tranquilitatis and Serenitatis Region</option>
+                        <option value="Whipple Crater">Whipple Crater</option>
+                        <option value="Wichmann R Crater">Wichmann R Crater</option>
+                        <option value="Zucchius Crater">Zucchius Crater</option>
+                        <option value="Racah X Scarp">Racah X Scarp</option>
+                        <option value="Mare Humorum">Mare Humorum</option>
+                        <option value="Humorum-Vitello Fault Complex">Humorum-Vitello Fault Complex</option>
+					</select>
+                </form>
+                <!-- Text will go here -->
+            </div>
+            <div class="smaller-box">
+                <h2 class="smaller-box-header"><span>Transcript</span> Findings:</h2>
+                <div class="transparent-box" id="results">
+                    <!-- Transparent box content -->
+                </div>
+            </div>
+        </div>
+        <footer>
+            A2 Summer 2025 by @jaredr
+        </footer>
+    </div>
+    <script>
+        const minWidth = 900; // Minimum width corresponding to dashboard_container's min-width
+
+        window.addEventListener('resize', function() {
+            if (window.innerWidth < minWidth) {
+                document.body.style.width = minWidth + 'px';
+            } else {
+                document.body.style.width = 'auto';
+            }
+        });
+
+        // Initial check on page load
+        if (window.innerWidth < minWidth) {
+            document.body.style.width = minWidth + 'px';
+        }
+
+        function getSelectedTranscriptFile() {
+            const select = document.getElementById('transcriptSelect');
+            return select ? select.value : 'recording.srt';
+        }
+
+        function analyzeDocument() {
+            const keywords = document.getElementById('keywords').value.split(',').map(keyword => keyword.trim().toLowerCase());
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = ''; // Clear previous results
+
+            const transcriptFile = getSelectedTranscriptFile();
+
+            fetch(transcriptFile)
+                .then(response => response.text())
+                .then(srtText => {
+                    // Parse SRT format
+                    const entries = parseSRT(srtText);
+
+                    const matchingEntries = entries.filter(entry =>
+                        keywords.some(keyword => {
+                            if (keyword === 'i') {
+                                // Match 'i' only as a standalone word
+                                const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
+                                return entry.text.toLowerCase().match(regex);
+                            } else {
+                                return entry.text.toLowerCase().includes(keyword);
+                            }
+                        })
+                    );
+
+                    // Display results
+                    if (matchingEntries.length > 0) {
+                        let resultsHTML = '<ol>';
+                        matchingEntries.forEach(entry => {
+                            let highlightedText = entry.text;
+                            keywords.forEach(keyword => {
+                                if (keyword === 'i') {
+                                    // Highlight 'i' only as a standalone word
+                                    const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
+                                    highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
+                                } else {
+                                    const regex = new RegExp(keyword, 'gi');
+                                    highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
+                                }
+                            });
+                            resultsHTML += `<li><strong>${entry.time}</strong><br>${highlightedText}</li>`;
+                        });
+                        resultsHTML += '</ol>';
+                        resultsDiv.innerHTML = resultsHTML;
+                    } else {
+                        resultsDiv.innerText = 'No matching entries found.';
+                    }
+                })
+                .catch(error => {
+                    resultsDiv.innerText = 'Error reading file: ' + error;
+                });
+        }
+
+        function parseSRT(srtText) {
+            const entries = [];
+            const lines = srtText.split(/\r\n|\n|\r/);
+            let i = 0;
+
+            while (i < lines.length) {
+                const index = parseInt(lines[i++]);
+                if (isNaN(index)) continue;
+
+                const time = lines[i++];
+                let text = '';
+                while (i < lines.length && lines[i] !== '') {
+                    text += lines[i++] + '<br>'; // Add <br> for line breaks within a subtitle
+                }
+                text = text.trim();
+                i++; // Skip the empty line
+
+                entries.push({ index, time, text });
+            }
+            return entries;
+        }
+
+		document.getElementById('keywords').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Prevent form submission
+                analyzeDocument();
+            }
+        });
+
+		function selectKeyword() {
+			const selectedKeyword = document.getElementById('keywordSelect').value;
+			if (selectedKeyword) {
+				document.getElementById('keywords').value = selectedKeyword;
+				analyzeDocument();
+			}
+		}
+
+        // Re-analyze when transcript selection changes
+        document.getElementById('transcriptSelect').addEventListener('change', function() {
+            // Get all keyword options except the empty one
+            const keywordSelect = document.getElementById('keywordSelect');
+            const allKeywords = Array.from(keywordSelect.options)
+                .map(opt => opt.value)
+                .filter(val => val && val !== "");
+            // Do not display in input, but analyze for all keywords
+            document.getElementById('keywords').value = '';
+            analyzeDocumentWithKeywords(allKeywords);
+        });
+
+        // Helper to analyze with a provided keyword array (does not touch input box)
+        function analyzeDocumentWithKeywords(keywordsArray) {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = ''; // Clear previous results
+
+            const transcriptFile = getSelectedTranscriptFile();
+
+            fetch(transcriptFile)
+                .then(response => response.text())
+                .then(srtText => {
+                    const entries = parseSRT(srtText);
+
+                    const matchingEntries = entries.filter(entry =>
+                        keywordsArray.some(keyword => {
+                            if (keyword.toLowerCase() === 'i') {
+                                const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
+                                return entry.text.toLowerCase().match(regex);
+                            } else {
+                                return entry.text.toLowerCase().includes(keyword.toLowerCase());
+                            }
+                        })
+                    );
+
+                    if (matchingEntries.length > 0) {
+                        let resultsHTML = '<ol>';
+                        matchingEntries.forEach(entry => {
+                            let highlightedText = entry.text;
+                            keywordsArray.forEach(keyword => {
+                                if (keyword.toLowerCase() === 'i') {
+                                    const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
+                                    highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
+                                } else {
+                                    const regex = new RegExp(keyword, 'gi');
+                                    highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
+                                }
+                            });
+                            resultsHTML += `<li><strong>${entry.time}</strong><br>${highlightedText}</li>`;
+                        });
+                        resultsHTML += '</ol>';
+                        resultsDiv.innerHTML = resultsHTML;
+                    } else {
+                        resultsDiv.innerText = 'No matching entries found.';
+                    }
+                })
+                .catch(error => {
+                    resultsDiv.innerText = 'Error reading file: ' + error;
+                });
+        }
+    </script>
+</body>
+</html>
