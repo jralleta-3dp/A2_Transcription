@@ -759,9 +759,18 @@
                         const targetElem = document.getElementById('transcript-line-' + targetIndex);
                         if (targetElem) {
                             targetElem.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                            // Optionally, highlight the target line with a green flash
-                            targetElem.style.background = '#b6e7c9'; // soft green
-                            setTimeout(() => { targetElem.style.background = ''; }, 1500);
+                            // Flash green in light mode, blue in dark mode
+                            if (document.body.classList.contains('darkmode')) {
+                                targetElem.style.background = '#3a5ca4'; // easy-on-eyes blue for dark mode
+                                targetElem.style.color = '#fff';
+                            } else {
+                                targetElem.style.background = '#b6e7c9'; // soft green for light mode
+                                targetElem.style.color = '';
+                            }
+                            setTimeout(() => {
+                                targetElem.style.background = '';
+                                targetElem.style.color = '';
+                            }, 1500);
                         }
                     }, 50);
                 })
