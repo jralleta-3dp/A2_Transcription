@@ -717,6 +717,18 @@
                 .map(opt => opt.value)
                 .filter(val => val && val !== "");
 
+            // Get keywords from the input box (if any)
+            const keywordsInput = document.getElementById('keywords').value;
+            let searchKeywords = keywordsInput
+                .split(',')
+                .map(k => k.trim())
+                .filter(Boolean);
+
+            // If no keywords in input, use all dropdown keywords (for full transcript mode)
+            if (searchKeywords.length === 0) {
+                searchKeywords = allKeywords;
+            }
+
             fetch(transcriptFile)
                 .then(response => response.text())
                 .then(srtText => {
@@ -726,7 +738,8 @@
                     let resultsHTML = '<ol style="font-family: inherit;">';
                     entries.forEach(entry => {
                         let highlightedText = entry.text;
-                        allKeywords.forEach(keyword => {
+                        searchKeywords.forEach(keyword => {
+                            if (!keyword) return;
                             if (keyword.toLowerCase() === 'i') {
                                 const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
                                 highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
@@ -746,8 +759,8 @@
                         const targetElem = document.getElementById('transcript-line-' + targetIndex);
                         if (targetElem) {
                             targetElem.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                            // Optionally, highlight the target line
-                            targetElem.style.background = '#ffe082';
+                            // Optionally, highlight the target line with a green flash
+                            targetElem.style.background = '#b6e7c9'; // soft green
                             setTimeout(() => { targetElem.style.background = ''; }, 1500);
                         }
                     }, 50);
