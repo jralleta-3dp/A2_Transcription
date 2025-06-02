@@ -246,6 +246,68 @@
         position: relative;
         top: 6px; /* Move button down to align its bottom edge with header text */
     }
+
+    .highlight {
+            background-color: yellow;
+            color: inherit;
+        }
+        body.darkmode .highlight {
+            background-color: #3a5ca4;
+            color: #fff;
+        }
+
+    /* Dark mode styles */
+    body.darkmode {
+        background: linear-gradient(to right, #23272f, #181a20);
+        color: #e0e0e0;
+    }
+    body.darkmode .dashboard-container {
+        background-color: #23272f;
+        color: #e0e0e0;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    body.darkmode .grey-box,
+    body.darkmode .smaller-box {
+        background-color: #23242a;
+        color: #e0e0e0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.18);
+    }
+    body.darkmode .grey-box-header,
+    body.darkmode .smaller-box-header {
+        color: #e0e0e0;
+        border-bottom: 3px solid #8fa2f7;
+    }
+    body.darkmode .page-header {
+        color: #e0e0e0;
+    }
+    body.darkmode .page-header span,
+    body.darkmode .grey-box-header span,
+    body.darkmode .smaller-box-header span {
+        color: #8fa2f7;
+    }
+    body.darkmode .grey-box form input[type="text"],
+    body.darkmode .grey-box form select {
+        background-color: #23242a;
+        color: #e0e0e0;
+        border: 1px solid #444;
+    }
+    body.darkmode .grey-box form button,
+    body.darkmode #showFullTranscriptBtn {
+        background-color: #8fa2f7;
+        color: #23242a;
+    }
+    body.darkmode .grey-box form button:hover,
+    body.darkmode #showFullTranscriptBtn:hover {
+        background-color: #5c6bc0;
+        color: #fff;
+    }
+    body.darkmode .transparent-box {
+        background-color: transparent;
+        color: #e0e0e0;
+    }
+    body.darkmode footer {
+        color: #aaa;
+    }
     </style>
 </head>
 <body>
@@ -506,10 +568,10 @@
                                 if (keyword === 'i') {
                                     // Highlight 'i' only as a standalone word
                                     const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
-                                    highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
+                                    highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
                                 } else {
                                     const regex = new RegExp(keyword, 'gi');
-                                    highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
+                                    highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
                                 }
                             });
                             // Make the timestamp clickable for navigation
@@ -614,10 +676,10 @@
                             keywordsArray.forEach(keyword => {
                                 if (keyword.toLowerCase() === 'i') {
                                     const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
-                                    highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
+                                    highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
                                 } else {
                                     const regex = new RegExp(keyword, 'gi');
-                                    highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
+                                    highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
                                 }
                             });
                             // Make the timestamp clickable for navigation
@@ -667,10 +729,10 @@
                         allKeywords.forEach(keyword => {
                             if (keyword.toLowerCase() === 'i') {
                                 const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
-                                highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
+                                highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
                             } else {
                                 const regex = new RegExp(keyword, 'gi');
-                                highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
+                                highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
                             }
                         });
                         // Add id to each line for scrolling
@@ -719,10 +781,10 @@
                         allKeywords.forEach(keyword => {
                             if (keyword.toLowerCase() === 'i') {
                                 const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
-                                highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
+                                highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
                             } else {
                                 const regex = new RegExp(keyword, 'gi');
-                                highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
+                                highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
                             }
                         });
                         resultsHTML += `<li id="transcript-line-${entry.index}"><strong>${entry.time}</strong><br>${highlightedText}</li>`;
@@ -734,6 +796,41 @@
                     resultsDiv.innerText = 'Error reading file: ' + error;
                 });
         });
+
+    </script>
+    <!-- Dark mode toggle checkbox below main container -->
+    <div style="width: 100%; display: flex; justify-content: flex-end; align-items: center; margin-top: 18px; padding-right: 8vw;">
+        <label for="darkModeToggle" style="margin-right: 10px; font-size: 1em; color: #777; display: flex; align-items: center;">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="#888" style="margin-right: 6px; vertical-align: middle;">
+                <path d="M13.61 2.05a8 8 0 1 0 4.34 11.41.75.75 0 0 0-.82-1.09A6.5 6.5 0 0 1 8.63 3.07a.75.75 0 0 0-1.09-.82z"/>
+            </svg>
+            Dark Mode
+        </label>
+        <input type="checkbox" id="darkModeToggle" style="width: 22px; height: 22px; accent-color: #5c6bc0; cursor: pointer;">
+    </div>
+    <script>
+    // Dark mode toggle logic for checkbox
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    function setDarkModeCheckbox(val) {
+        if (val) {
+            document.body.classList.add('darkmode');
+        } else {
+            document.body.classList.remove('darkmode');
+        }
+    }
+    darkModeToggle.addEventListener('change', function() {
+        setDarkModeCheckbox(this.checked);
+        localStorage.setItem('darkmode', this.checked ? 'true' : 'false');
+    });
+
+    // Optional: persist dark mode preference
+    if (localStorage.getItem('darkmode') === 'true') {
+        darkModeToggle.checked = true;
+        document.body.classList.add('darkmode');
+    } else {
+        darkModeToggle.checked = false;
+        document.body.classList.remove('darkmode');
+    }
     </script>
 </body>
 </html>
