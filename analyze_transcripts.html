@@ -186,10 +186,58 @@
             border: 1px solid #ccc;
             margin-left: 20px;
         }
+
+        /* Responsive layout for header and controls */
+    .header-controls-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding-left: 10%;
+        position: relative;
+        gap: 16px;
+    }
+
+    .header-controls-container > * {
+        margin-bottom: 8px;
+    }
+
+    @media (max-width: 1200px) {
+        .header-controls-container {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 5%;
+        }
+        .header-controls-container > * {
+            margin-right: 0 !important;
+            margin-bottom: 10px;
+        }
+        #showFullTranscriptBtn {
+            position: static !important;
+            width: 100%;
+            margin-top: 8px;
+        }
+    }
+
+    #showFullTranscriptBtn {
+        background-color: #5c6bc0;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 10px 18px;
+        font-size: 1em;
+        cursor: pointer;
+        /* Remove absolute positioning for default, will be overridden by media query if needed */
+        position: static;
+        margin-left: auto;
+        margin-right: 5%;
+        white-space: nowrap;
+    }
     </style>
 </head>
 <body>
-    <div style="display: flex; justify-content: flex-start; align-items: center; width: 100%; padding-left: 10%;">
+    <div class="header-controls-container">
         <div class="page-header" style="display: flex; align-items: center;">
             <h1 class="page-header" style="margin-right: 24px;"><span>Analyze</span> Transcripts</h1>
             <!-- Transcript selection dropdown -->
@@ -205,6 +253,9 @@
                 <!-- Add more transcript files as needed -->
             </select>
         </div>
+        <button id="showFullTranscriptBtn">
+            Show Full Transcript (Highlight All Keywords)
+        </button>
     </div>
     <div class="dashboard-container">
         <div class="flex-container">
@@ -404,9 +455,15 @@
         }
 
         function analyzeDocument() {
-            const keywords = document.getElementById('keywords').value.split(',').map(keyword => keyword.trim().toLowerCase());
+            const keywordsInput = document.getElementById('keywords').value;
+            const keywords = keywordsInput.split(',').map(keyword => keyword.trim().toLowerCase()).filter(Boolean);
             const resultsDiv = document.getElementById('results');
             resultsDiv.innerHTML = ''; // Clear previous results
+
+            if (keywords.length === 0) {
+                resultsDiv.innerText = 'Please enter at least one keyword.';
+                return;
+            }
 
             const transcriptFile = getSelectedTranscriptFile();
 
@@ -443,10 +500,20 @@
                                     highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
                                 }
                             });
-                            resultsHTML += `<li><strong>${entry.time}</strong><br>${highlightedText}</li>`;
+                            // Make the timestamp clickable for navigation
+                            resultsHTML += `<li class="search-result-line" data-line-index="${entry.index}"><strong><a href="#" class="jump-to-line" data-line-index="${entry.index}" style="color:#5c6bc0;text-decoration:underline;cursor:pointer;">${entry.time}</a></strong><br>${highlightedText}</li>`;
                         });
                         resultsHTML += '</ol>';
                         resultsDiv.innerHTML = resultsHTML;
+
+                        // Add click listeners to each timestamp link
+                        document.querySelectorAll('.jump-to-line').forEach(item => {
+                            item.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                const lineIndex = this.getAttribute('data-line-index');
+                                showFullTranscriptAndScrollTo(lineIndex);
+                            });
+                        });
                     } else {
                         resultsDiv.innerText = 'No matching entries found.';
                     }
@@ -541,10 +608,20 @@
                                     highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
                                 }
                             });
-                            resultsHTML += `<li><strong>${entry.time}</strong><br>${highlightedText}</li>`;
+                            // Make the timestamp clickable for navigation
+                            resultsHTML += `<li class="search-result-line" data-line-index="${entry.index}"><strong><a href="#" class="jump-to-line" data-line-index="${entry.index}" style="color:#5c6bc0;text-decoration:underline;cursor:pointer;">${entry.time}</a></strong><br>${highlightedText}</li>`;
                         });
                         resultsHTML += '</ol>';
                         resultsDiv.innerHTML = resultsHTML;
+
+                        // Add click listeners to each timestamp link
+                        document.querySelectorAll('.jump-to-line').forEach(item => {
+                            item.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                const lineIndex = this.getAttribute('data-line-index');
+                                showFullTranscriptAndScrollTo(lineIndex);
+                            });
+                        });
                     } else {
                         resultsDiv.innerText = 'No matching entries found.';
                     }
@@ -553,6 +630,98 @@
                     resultsDiv.innerText = 'Error reading file: ' + error;
                 });
         }
+
+        // Helper to show full transcript and scroll to a specific line
+        function showFullTranscriptAndScrollTo(targetIndex) {
+            const transcriptFile = getSelectedTranscriptFile();
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = 'Loading...';
+
+            // Get all keywords from dropdown (excluding empty)
+            const keywordSelect = document.getElementById('keywordSelect');
+            const allKeywords = Array.from(keywordSelect.options)
+                .map(opt => opt.value)
+                .filter(val => val && val !== "");
+
+            fetch(transcriptFile)
+                .then(response => response.text())
+                .then(srtText => {
+                    const entries = parseSRT(srtText);
+
+                    // Build results as an ordered list, with highlighting and ids
+                    let resultsHTML = '<ol style="font-family: inherit;">';
+                    entries.forEach(entry => {
+                        let highlightedText = entry.text;
+                        allKeywords.forEach(keyword => {
+                            if (keyword.toLowerCase() === 'i') {
+                                const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
+                                highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
+                            } else {
+                                const regex = new RegExp(keyword, 'gi');
+                                highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
+                            }
+                        });
+                        // Add id to each line for scrolling
+                        resultsHTML += `<li id="transcript-line-${entry.index}"><strong>${entry.time}</strong><br>${highlightedText}</li>`;
+                    });
+                    resultsHTML += '</ol>';
+                    resultsDiv.innerHTML = resultsHTML;
+
+                    // Scroll to the target line after rendering
+                    setTimeout(() => {
+                        const targetElem = document.getElementById('transcript-line-' + targetIndex);
+                        if (targetElem) {
+                            targetElem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            // Optionally, highlight the target line
+                            targetElem.style.background = '#ffe082';
+                            setTimeout(() => { targetElem.style.background = ''; }, 1500);
+                        }
+                    }, 50);
+                })
+                .catch(error => {
+                    resultsDiv.innerText = 'Error reading file: ' + error;
+                });
+        }
+
+        // Add event listener for the new button
+        document.getElementById('showFullTranscriptBtn').addEventListener('click', function() {
+            const transcriptFile = getSelectedTranscriptFile();
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = 'Loading...';
+
+            // Get all keywords from dropdown (excluding empty)
+            const keywordSelect = document.getElementById('keywordSelect');
+            const allKeywords = Array.from(keywordSelect.options)
+                .map(opt => opt.value)
+                .filter(val => val && val !== "");
+
+            fetch(transcriptFile)
+                .then(response => response.text())
+                .then(srtText => {
+                    const entries = parseSRT(srtText);
+
+                    // Build results as an ordered list, with highlighting and ids
+                    let resultsHTML = '<ol style="font-family: inherit;">';
+                    entries.forEach(entry => {
+                        let highlightedText = entry.text;
+                        allKeywords.forEach(keyword => {
+                            if (keyword.toLowerCase() === 'i') {
+                                const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
+                                highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
+                            } else {
+                                const regex = new RegExp(keyword, 'gi');
+                                highlightedText = highlightedText.replace(regex, '<span style="background-color: yellow;">$&</span>');
+                            }
+                        });
+                        resultsHTML += `<li id="transcript-line-${entry.index}"><strong>${entry.time}</strong><br>${highlightedText}</li>`;
+                    });
+                    resultsHTML += '</ol>';
+                    resultsDiv.innerHTML = resultsHTML;
+                })
+                .catch(error => {
+                    resultsDiv.innerText = 'Error reading file: ' + error;
+                });
+        });
     </script>
 </body>
 </html>
