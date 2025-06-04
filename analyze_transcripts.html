@@ -545,6 +545,26 @@ body.darkmode .copy-selected-btn:hover {
             A2 Summer 2025 by @jaredr
         </footer>
     </div>
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" title="Back to Top" style="
+        position: fixed;
+        left: 32px;
+        bottom: 32px;
+        z-index: 1000;
+        background: #5c6bc0;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        font-size: 1.7em;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        cursor: pointer;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.2s, opacity 0.2s;
+    ">&uarr;</button>
     <script>
         const minWidth = 900; // Minimum width corresponding to dashboard_container's min-width
 
@@ -1090,6 +1110,25 @@ document.getElementById('copySelectedBtn').addEventListener('click', function() 
         darkModeToggle.checked = false;
         document.body.classList.remove('darkmode');
     }
+    </script>
+    <!-- Back to Top Button logic -->
+    <script>
+    // Back to Top Button logic
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 120) {
+            backToTopBtn.style.display = 'flex';
+            backToTopBtn.style.opacity = '1';
+        } else {
+            backToTopBtn.style.opacity = '0';
+            setTimeout(() => {
+                if (window.scrollY <= 120) backToTopBtn.style.display = 'none';
+            }, 200);
+        }
+    });
+    backToTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
     </script>
 </body>
 </html>
