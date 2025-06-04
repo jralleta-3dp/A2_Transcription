@@ -310,6 +310,35 @@
     body.darkmode footer {
         color: #aaa;
     }
+
+    .checkbox-line {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.copy-selected-btn {
+    display: none;
+    margin: 18px 0 0 0;
+    padding: 10px 22px;
+    background: #5c6bc0;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.copy-selected-btn:hover {
+    background: #3f51b5;
+}
+body.darkmode .copy-selected-btn {
+    background: #8fa2f7;
+    color: #23242a;
+}
+body.darkmode .copy-selected-btn:hover {
+    background: #5c6bc0;
+    color: #fff;
+}
     </style>
 </head>
 <body>
@@ -500,6 +529,7 @@
                 <div class="transparent-box" id="results">
                     <!-- Transparent box content -->
                 </div>
+                <button id="copySelectedBtn" class="copy-selected-btn">Copy Selected Lines</button>
             </div>
         </div>
         <footer>
@@ -535,6 +565,7 @@
 
             if (keywords.length === 0) {
                 resultsDiv.innerText = 'Please enter at least one keyword.';
+                document.getElementById('copySelectedBtn').style.display = 'none';
                 return;
             }
 
@@ -560,39 +591,15 @@
 
                     // Display results
                     if (matchingEntries.length > 0) {
-                        let resultsHTML = '<ol>';
-                        matchingEntries.forEach(entry => {
-                            let highlightedText = entry.text;
-                            keywords.forEach(keyword => {
-                                if (keyword === 'i') {
-                                    // Highlight 'i' only as a standalone word
-                                    const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
-                                    highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
-                                } else {
-                                    const regex = new RegExp(keyword, 'gi');
-                                    highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
-                                }
-                            });
-                            // Make the timestamp clickable for navigation
-                            resultsHTML += `<li class="search-result-line" data-line-index="${entry.index}"><strong><a href="#" class="jump-to-line" data-line-index="${entry.index}" style="color:#5c6bc0;text-decoration:underline;cursor:pointer;">${entry.time}</a></strong><br>${highlightedText}</li>`;
-                        });
-                        resultsHTML += '</ol>';
-                        resultsDiv.innerHTML = resultsHTML;
-
-                        // Add click listeners to each timestamp link
-                        document.querySelectorAll('.jump-to-line').forEach(item => {
-                            item.addEventListener('click', function(e) {
-                                e.preventDefault();
-                                const lineIndex = this.getAttribute('data-line-index');
-                                showFullTranscriptAndScrollTo(lineIndex);
-                            });
-                        });
+                        renderTranscriptWithCheckboxes(matchingEntries, keywords);
                     } else {
                         resultsDiv.innerText = 'No matching entries found.';
+                        document.getElementById('copySelectedBtn').style.display = 'none';
                     }
                 })
                 .catch(error => {
                     resultsDiv.innerText = 'Error reading file: ' + error;
+                    document.getElementById('copySelectedBtn').style.display = 'none';
                 });
         }
 
@@ -669,38 +676,15 @@
                     );
 
                     if (matchingEntries.length > 0) {
-                        let resultsHTML = '<ol>';
-                        matchingEntries.forEach(entry => {
-                            let highlightedText = entry.text;
-                            keywordsArray.forEach(keyword => {
-                                if (keyword.toLowerCase() === 'i') {
-                                    const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
-                                    highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
-                                } else {
-                                    const regex = new RegExp(keyword, 'gi');
-                                    highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
-                                }
-                            });
-                            // Make the timestamp clickable for navigation
-                            resultsHTML += `<li class="search-result-line" data-line-index="${entry.index}"><strong><a href="#" class="jump-to-line" data-line-index="${entry.index}" style="color:#5c6bc0;text-decoration:underline;cursor:pointer;">${entry.time}</a></strong><br>${highlightedText}</li>`;
-                        });
-                        resultsHTML += '</ol>';
-                        resultsDiv.innerHTML = resultsHTML;
-
-                        // Add click listeners to each timestamp link
-                        document.querySelectorAll('.jump-to-line').forEach(item => {
-                            item.addEventListener('click', function(e) {
-                                e.preventDefault();
-                                const lineIndex = this.getAttribute('data-line-index');
-                                showFullTranscriptAndScrollTo(lineIndex);
-                            });
-                        });
+                        renderTranscriptWithCheckboxes(matchingEntries, keywordsArray);
                     } else {
                         resultsDiv.innerText = 'No matching entries found.';
+                        document.getElementById('copySelectedBtn').style.display = 'none';
                     }
                 })
                 .catch(error => {
                     resultsDiv.innerText = 'Error reading file: ' + error;
+                    document.getElementById('copySelectedBtn').style.display = 'none';
                 });
         }
 
@@ -733,25 +717,7 @@
                 .then(srtText => {
                     const entries = parseSRT(srtText);
 
-                    // Build results as an ordered list, with highlighting and ids
-                    let resultsHTML = '<ol style="font-family: inherit;">';
-                    entries.forEach(entry => {
-                        let highlightedText = entry.text;
-                        searchKeywords.forEach(keyword => {
-                            if (!keyword) return;
-                            if (keyword.toLowerCase() === 'i') {
-                                const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
-                                highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
-                            } else {
-                                const regex = new RegExp(keyword, 'gi');
-                                highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
-                            }
-                        });
-                        // Add id to each line for scrolling
-                        resultsHTML += `<li id="transcript-line-${entry.index}"><strong>${entry.time}</strong><br>${highlightedText}</li>`;
-                    });
-                    resultsHTML += '</ol>';
-                    resultsDiv.innerHTML = resultsHTML;
+                    renderTranscriptWithCheckboxes(entries, searchKeywords);
 
                     // Scroll to the target line after rendering
                     setTimeout(() => {
@@ -760,10 +726,10 @@
                             targetElem.scrollIntoView({ behavior: 'smooth', block: 'center' });
                             // Flash green in light mode, blue in dark mode
                             if (document.body.classList.contains('darkmode')) {
-                                targetElem.style.background = '#3a5ca4'; // easy-on-eyes blue for dark mode
+                                targetElem.style.background = '#3a5ca4';
                                 targetElem.style.color = '#fff';
                             } else {
-                                targetElem.style.background = '#b6e7c9'; // soft green for light mode
+                                targetElem.style.background = '#b6e7c9';
                                 targetElem.style.color = '';
                             }
                             setTimeout(() => {
@@ -775,6 +741,7 @@
                 })
                 .catch(error => {
                     resultsDiv.innerText = 'Error reading file: ' + error;
+                    document.getElementById('copySelectedBtn').style.display = 'none';
                 });
         }
 
@@ -794,29 +761,199 @@
                 .then(response => response.text())
                 .then(srtText => {
                     const entries = parseSRT(srtText);
-
-                    // Build results as an ordered list, with highlighting and ids
-                    let resultsHTML = '<ol style="font-family: inherit;">';
-                    entries.forEach(entry => {
-                        let highlightedText = entry.text;
-                        allKeywords.forEach(keyword => {
-                            if (keyword.toLowerCase() === 'i') {
-                                const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
-                                highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
-                            } else {
-                                const regex = new RegExp(keyword, 'gi');
-                                highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
-                            }
-                        });
-                        resultsHTML += `<li id="transcript-line-${entry.index}"><strong>${entry.time}</strong><br>${highlightedText}</li>`;
-                    });
-                    resultsHTML += '</ol>';
-                    resultsDiv.innerHTML = resultsHTML;
+                    renderTranscriptWithCheckboxes(entries, allKeywords);
                 })
                 .catch(error => {
                     resultsDiv.innerText = 'Error reading file: ' + error;
+                    document.getElementById('copySelectedBtn').style.display = 'none';
                 });
         });
+
+        // Helper to render transcript lines with checkboxes and clickable timestamps
+function renderTranscriptWithCheckboxes(entries, highlightKeywords = []) {
+    const resultsDiv = document.getElementById('results');
+    let resultsHTML = '<ol style="font-family: inherit;">';
+    entries.forEach(entry => {
+        let highlightedText = entry.text;
+        highlightKeywords.forEach(keyword => {
+            if (!keyword) return;
+            if (keyword.toLowerCase() === 'i') {
+                const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
+                highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
+            } else {
+                const regex = new RegExp(keyword, 'gi');
+                highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
+            }
+        });
+        // Make the timestamp clickable for navigation
+        resultsHTML += `
+        <li id="transcript-line-${entry.index}">
+            <div class="checkbox-line">
+                <input type="checkbox" class="line-checkbox" data-line-index="${entry.index}">
+                <div>
+                    <strong>
+                        <a href="#" class="jump-to-line" data-line-index="${entry.index}" style="color:#5c6bc0;text-decoration:underline;cursor:pointer;">
+                            ${entry.time}
+                        </a>
+                    </strong><br>${highlightedText}
+                </div>
+            </div>
+        </li>`;
+    });
+    resultsHTML += '</ol>';
+    resultsDiv.innerHTML = resultsHTML;
+    setupCheckboxSelection();
+
+    // Add click listeners to each timestamp link
+    document.querySelectorAll('.jump-to-line').forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            const lineIndex = this.getAttribute('data-line-index');
+            showFullTranscriptAndScrollTo(lineIndex);
+        });
+    });
+}
+
+// Setup checkbox selection logic (shift-select, show/hide copy button)
+function setupCheckboxSelection() {
+    const checkboxes = Array.from(document.querySelectorAll('.line-checkbox'));
+    const copyBtn = document.getElementById('copySelectedBtn');
+    let lastChecked = null;
+
+    checkboxes.forEach(cb => {
+        cb.addEventListener('click', function(e) {
+            if (e.shiftKey && lastChecked) {
+                // Always select all checkboxes between lastChecked and this, inclusive
+                const start = checkboxes.indexOf(lastChecked);
+                const end = checkboxes.indexOf(this);
+                const [min, max] = [start, end].sort((a, b) => a - b);
+                checkboxes.forEach((box, idx) => {
+                    box.checked = (idx >= min && idx <= max);
+                });
+            } else {
+                // If not shift, check if two or more boxes are checked, and select all in between
+                const checkedIndexes = checkboxes
+                    .map((box, idx) => box.checked ? idx : -1)
+                    .filter(idx => idx !== -1);
+                if (checkedIndexes.length > 1) {
+                    const [min, max] = [Math.min(...checkedIndexes), Math.max(...checkedIndexes)];
+                    checkboxes.forEach((box, idx) => {
+                        box.checked = (idx >= min && idx <= max);
+                    });
+                }
+            }
+            lastChecked = this;
+            updateCopyButtonVisibility();
+        });
+        cb.addEventListener('change', function() {
+            // Also check for non-shift multi-selects
+            const checkedIndexes = checkboxes
+                .map((box, idx) => box.checked ? idx : -1)
+                .filter(idx => idx !== -1);
+            if (checkedIndexes.length > 1) {
+                const [min, max] = [Math.min(...checkedIndexes), Math.max(...checkedIndexes)];
+                checkboxes.forEach((box, idx) => {
+                    box.checked = (idx >= min && idx <= max);
+                });
+            }
+            updateCopyButtonVisibility();
+        });
+    });
+
+    function updateCopyButtonVisibility() {
+        const anyChecked = checkboxes.some(cb => cb.checked);
+        copyBtn.style.display = anyChecked ? 'block' : 'none';
+    }
+}
+
+// Copy selected lines to clipboard (plain text, no HTML tags)
+document.getElementById('copySelectedBtn').addEventListener('click', function() {
+    const checkboxes = Array.from(document.querySelectorAll('.line-checkbox'));
+    const selectedLis = checkboxes.filter(cb => cb.checked)
+        .map(cb => cb.closest('li'));
+    if (selectedLis.length === 0) return;
+
+    let lines = [];
+    if (selectedLis.length === 1) {
+        // Only one line selected: include timestamp and text
+        const div = selectedLis[0].querySelector('.checkbox-line > div');
+        const strong = div.querySelector('strong');
+        const timestamp = strong ? strong.innerText.trim() : '';
+        // Remove the <strong> (timestamp) from the HTML for text extraction
+        let html = div.innerHTML.replace(/<strong>[\s\S]*?<\/strong>\s*<br\s*\/?>/i, '');
+        html = html.replace(/<span[^>]*>|<\/span>/g, '').replace(/<br\s*\/?>/gi, '\n');
+        html = html.replace(/<[^>]+>/g, '');
+        lines = [(timestamp ? `[${timestamp}]\n` : '') + html.trim()];
+    } else {
+        // Multiple lines: first and last with timestamp, middle without
+        const getText = div => {
+            // Remove the <strong> (timestamp) from the HTML for text extraction
+            let html = div.innerHTML.replace(/<strong>[\s\S]*?<\/strong>\s*<br\s*\/?>/i, '');
+            html = html.replace(/<span[^>]*>|<\/span>/g, '').replace(/<br\s*\/?>/gi, '\n');
+            html = html.replace(/<[^>]+>/g, '');
+            return html.trim();
+        };
+        // First line
+        const firstDiv = selectedLis[0].querySelector('.checkbox-line > div');
+        const firstStrong = firstDiv.querySelector('strong');
+        const firstTimestamp = firstStrong ? firstStrong.innerText.trim() : '';
+        lines.push((firstTimestamp ? `[${firstTimestamp}]\n` : '') + getText(firstDiv));
+        // Middle lines (no timestamp)
+        for (let i = 1; i < selectedLis.length - 1; i++) {
+            const div = selectedLis[i].querySelector('.checkbox-line > div');
+            lines.push(getText(div));
+        }
+        // Last line (if more than one)
+        if (selectedLis.length > 1) {
+            const lastDiv = selectedLis[selectedLis.length - 1].querySelector('.checkbox-line > div');
+            const lastStrong = lastDiv.querySelector('strong');
+            const lastTimestamp = lastStrong ? lastStrong.innerText.trim() : '';
+            lines.push((lastTimestamp ? `[${lastTimestamp}]\n` : '') + getText(lastDiv));
+        }
+    }
+    const text = lines.join('\n\n');
+    // Use a fallback for clipboard if navigator.clipboard fails
+    function fallbackCopy(text) {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.setAttribute('readonly', '');
+        textarea.style.position = 'absolute';
+        textarea.style.left = '-9999px';
+        document.body.appendChild(textarea);
+        textarea.select();
+        try {
+            document.execCommand('copy');
+        } catch (err) {}
+        document.body.removeChild(textarea);
+    }
+    function uncheckAll() {
+        checkboxes.forEach(cb => { cb.checked = false; });
+        document.getElementById('copySelectedBtn').style.display = 'none';
+    }
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(() => {
+            document.getElementById('copySelectedBtn').innerText = 'Copied!';
+            setTimeout(() => {
+                document.getElementById('copySelectedBtn').innerText = 'Copy Selected Lines';
+                uncheckAll();
+            }, 1200);
+        }).catch(() => {
+            fallbackCopy(text);
+            document.getElementById('copySelectedBtn').innerText = 'Copied!';
+            setTimeout(() => {
+                document.getElementById('copySelectedBtn').innerText = 'Copy Selected Lines';
+                uncheckAll();
+            }, 1200);
+        });
+    } else {
+        fallbackCopy(text);
+        document.getElementById('copySelectedBtn').innerText = 'Copied!';
+        setTimeout(() => {
+            document.getElementById('copySelectedBtn').innerText = 'Copy Selected Lines';
+            uncheckAll();
+        }, 1200);
+    }
+});
 
     </script>
     <!-- Dark mode toggle checkbox below main container -->
