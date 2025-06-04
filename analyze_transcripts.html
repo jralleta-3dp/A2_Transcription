@@ -566,6 +566,102 @@ body.darkmode .copy-selected-btn:hover {
             return select ? select.value : 'recording.srt';
         }
 
+        // Helper: Map transcript file names to display names
+        const transcriptDisplayNames = {
+            "Transcript_001_MareIngenii_corrected.srt": "Audio 001",
+            "Transcript_002_Orientale_corrected.srt": "Audio 002",
+            "Transcript_003_Unknown_corrected.srt": "Audio 003",
+            "Transcript_004_Leibnitz_corrected.srt": "Audio 004",
+            "Transcript_005_Oppenheimer_ApolloBasin_corrected.srt": "Audio 005",
+            "Transcript_006_unknown_corrected.srt": "Audio 006",
+            "Transcript_007_Earthrise_corrected.srt": "Audio 007",
+            "Transcript_008._Ingenii_2_corrected.srt": "Audio 008",
+            "Transcript_009_ImpactFlash_corrected.srt": "Audio 009",
+            "catchall.srt": "Catchall"
+        };
+
+        // Helper: Map transcript section numbers to display names
+        const sectionNumberToDisplay = {
+            "001": "Audio 001",
+            "002": "Audio 002",
+            "003": "Audio 003",
+            "004": "Audio 004",
+            "005": "Audio 005",
+            "006": "Audio 006",
+            "007": "Audio 007",
+            "008": "Audio 008",
+            "009": "Audio 009"
+            // ...add more if needed...
+        };
+
+        // Enhanced SRT parser for catchall: detects section headers and assigns section to each entry
+        function parseSRT(srtText, isCatchall = false) {
+            if (!isCatchall) {
+                const entries = [];
+                const lines = srtText.split(/\r\n|\n|\r/);
+                let i = 0;
+                while (i < lines.length) {
+                    const index = parseInt(lines[i++]);
+                    if (isNaN(index)) continue;
+                    const time = lines[i++];
+                    let text = '';
+                    while (i < lines.length && lines[i] !== '') {
+                        text += lines[i++] + '<br>';
+                    }
+                    text = text.trim();
+                    i++;
+                    entries.push({ index, time, text });
+                }
+                return entries;
+            } else {
+                // Catchall: parse sections
+                const entries = [];
+                const lines = srtText.split(/\r\n|\n|\r/);
+                let i = 0;
+                let currentSection = null;
+                let currentSectionRaw = null;
+                while (i < lines.length) {
+                    // Detect section header, e.g., "### Transcript 001"
+                    const sectionMatch = lines[i].match(/^#+\s*Transcript\s+(\d+)/i);
+                    if (sectionMatch) {
+                        currentSection = sectionMatch[1];
+                        currentSectionRaw = lines[i];
+                        i++;
+                        continue;
+                    }
+                    const index = parseInt(lines[i]);
+                    if (isNaN(index)) { i++; continue; }
+                    i++;
+                    const time = lines[i++];
+                    let text = '';
+                    while (i < lines.length && lines[i] !== '') {
+                        text += lines[i++] + '<br>';
+                    }
+                    text = text.trim();
+                    i++;
+                    entries.push({
+                        index,
+                        time,
+                        text,
+                        section: currentSection,
+                        sectionRaw: currentSectionRaw
+                    });
+                }
+                return entries;
+            }
+        }
+
+        // Helper: Generate a unique line id for catchall or normal transcripts
+function getLineId(entry, isCatchall) {
+    if (isCatchall && entry.section) {
+        // Pad section to 3 digits for consistency
+        const section = entry.section.toString().padStart(3, '0');
+        return `transcript-line-${section}-${entry.index}`;
+    } else {
+        return `transcript-line-${entry.index}`;
+    }
+}
+
         function analyzeDocument() {
             const keywordsInput = document.getElementById('keywords').value;
             const keywords = keywordsInput.split(',').map(keyword => keyword.trim().toLowerCase()).filter(Boolean);
@@ -579,12 +675,12 @@ body.darkmode .copy-selected-btn:hover {
             }
 
             const transcriptFile = getSelectedTranscriptFile();
+            const isCatchall = transcriptFile === "catchall.srt";
 
             fetch(transcriptFile)
                 .then(response => response.text())
                 .then(srtText => {
-                    // Parse SRT format
-                    const entries = parseSRT(srtText);
+                    const entries = parseSRT(srtText, isCatchall);
 
                     const matchingEntries = entries.filter(entry =>
                         keywords.some(keyword => {
@@ -600,7 +696,7 @@ body.darkmode .copy-selected-btn:hover {
 
                     // Display results
                     if (matchingEntries.length > 0) {
-                        renderTranscriptWithCheckboxes(matchingEntries, keywords);
+                        renderTranscriptWithCheckboxes(matchingEntries, keywords, isCatchall);
                     } else {
                         resultsDiv.innerText = 'No matching entries found.';
                         document.getElementById('copySelectedBtn').style.display = 'none';
@@ -610,28 +706,6 @@ body.darkmode .copy-selected-btn:hover {
                     resultsDiv.innerText = 'Error reading file: ' + error;
                     document.getElementById('copySelectedBtn').style.display = 'none';
                 });
-        }
-
-        function parseSRT(srtText) {
-            const entries = [];
-            const lines = srtText.split(/\r\n|\n|\r/);
-            let i = 0;
-
-            while (i < lines.length) {
-                const index = parseInt(lines[i++]);
-                if (isNaN(index)) continue;
-
-                const time = lines[i++];
-                let text = '';
-                while (i < lines.length && lines[i] !== '') {
-                    text += lines[i++] + '<br>'; // Add <br> for line breaks within a subtitle
-                }
-                text = text.trim();
-                i++; // Skip the empty line
-
-                entries.push({ index, time, text });
-            }
-            return entries;
         }
 
 		document.getElementById('keywords').addEventListener('keydown', function(event) {
@@ -667,11 +741,12 @@ body.darkmode .copy-selected-btn:hover {
             resultsDiv.innerHTML = ''; // Clear previous results
 
             const transcriptFile = getSelectedTranscriptFile();
+            const isCatchall = transcriptFile === "catchall.srt";
 
             fetch(transcriptFile)
                 .then(response => response.text())
                 .then(srtText => {
-                    const entries = parseSRT(srtText);
+                    const entries = parseSRT(srtText, isCatchall);
 
                     const matchingEntries = entries.filter(entry =>
                         keywordsArray.some(keyword => {
@@ -685,10 +760,10 @@ body.darkmode .copy-selected-btn:hover {
                     );
 
                     if (matchingEntries.length > 0) {
-                        renderTranscriptWithCheckboxes(matchingEntries, keywordsArray);
+                        renderTranscriptWithCheckboxes(matchingEntries, keywordsArray, isCatchall);
                     } else {
                         // No matches: show full transcript
-                        renderTranscriptWithCheckboxes(entries, keywordsArray);
+                        renderTranscriptWithCheckboxes(entries, keywordsArray, isCatchall);
                     }
                 })
                 .catch(error => {
@@ -698,7 +773,7 @@ body.darkmode .copy-selected-btn:hover {
         }
 
         // Helper to show full transcript and scroll to a specific line
-        function showFullTranscriptAndScrollTo(targetIndex) {
+        function showFullTranscriptAndScrollTo(targetIndex, targetSection) {
             const transcriptFile = getSelectedTranscriptFile();
             const resultsDiv = document.getElementById('results');
             resultsDiv.innerHTML = 'Loading...';
@@ -721,16 +796,24 @@ body.darkmode .copy-selected-btn:hover {
                 searchKeywords = allKeywords;
             }
 
+            const isCatchall = transcriptFile === "catchall.srt";
+
             fetch(transcriptFile)
                 .then(response => response.text())
                 .then(srtText => {
-                    const entries = parseSRT(srtText);
-
-                    renderTranscriptWithCheckboxes(entries, searchKeywords);
+                    const entries = parseSRT(srtText, isCatchall);
+                    renderTranscriptWithCheckboxes(entries, searchKeywords, isCatchall);
 
                     // Scroll to the target line after rendering
                     setTimeout(() => {
-                        const targetElem = document.getElementById('transcript-line-' + targetIndex);
+                        let targetElem;
+                        if (isCatchall && targetSection) {
+                            // Pad section to 3 digits for consistency
+                            const section = targetSection.toString().padStart(3, '0');
+                            targetElem = document.getElementById(`transcript-line-${section}-${targetIndex}`);
+                        } else {
+                            targetElem = document.getElementById('transcript-line-' + targetIndex);
+                        }
                         if (targetElem) {
                             targetElem.scrollIntoView({ behavior: 'smooth', block: 'center' });
                             // Flash green in light mode, blue in dark mode
@@ -754,7 +837,6 @@ body.darkmode .copy-selected-btn:hover {
                 });
         }
 
-        // Add event listener for the new button
         document.getElementById('showFullTranscriptBtn').addEventListener('click', function() {
             const transcriptFile = getSelectedTranscriptFile();
             const resultsDiv = document.getElementById('results');
@@ -766,11 +848,13 @@ body.darkmode .copy-selected-btn:hover {
                 .map(opt => opt.value)
                 .filter(val => val && val !== "");
 
+            const isCatchall = transcriptFile === "catchall.srt";
+
             fetch(transcriptFile)
                 .then(response => response.text())
                 .then(srtText => {
-                    const entries = parseSRT(srtText);
-                    renderTranscriptWithCheckboxes(entries, allKeywords);
+                    const entries = parseSRT(srtText, isCatchall);
+                    renderTranscriptWithCheckboxes(entries, allKeywords, isCatchall);
                 })
                 .catch(error => {
                     resultsDiv.innerText = 'Error reading file: ' + error;
@@ -778,52 +862,60 @@ body.darkmode .copy-selected-btn:hover {
                 });
         });
 
-        // Helper to render transcript lines with checkboxes and clickable timestamp
-function renderTranscriptWithCheckboxes(entries, highlightKeywords = []) {
-    const resultsDiv = document.getElementById('results');
-    let resultsHTML = '<ol style="font-family: inherit;">';
-    entries.forEach(entry => {
-        let highlightedText = entry.text;
-        highlightKeywords.forEach(keyword => {
-            if (!keyword) return;
-            if (keyword.toLowerCase() === 'i') {
-                const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
-                highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
-            } else {
-                const regex = new RegExp(keyword, 'gi');
-                highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
-            }
-        });
-        // Make the timestamp clickable for navigation
-        resultsHTML += `
-        <li id="transcript-line-${entry.index}">
-            <div class="checkbox-line">
-                <input type="checkbox" class="line-checkbox" data-line-index="${entry.index}">
-                <div>
-                    <strong>
-                        <a href="#" class="jump-to-line" data-line-index="${entry.index}" style="color:#5c6bc0;text-decoration:underline;cursor:pointer;">
-                            ${entry.time}
-                        </a>
-                    </strong><br>${highlightedText}
-                </div>
-            </div>
-        </li>`;
-    });
-    resultsHTML += '</ol>';
-    resultsDiv.innerHTML = resultsHTML;
-    setupCheckboxSelection();
+        // Modified: renderTranscriptWithCheckboxes now supports catchall section display
+        function renderTranscriptWithCheckboxes(entries, highlightKeywords = [], isCatchall = false) {
+            const resultsDiv = document.getElementById('results');
+            let resultsHTML = '<ol style="font-family: inherit;">';
+            entries.forEach(entry => {
+                let highlightedText = entry.text;
+                highlightKeywords.forEach(keyword => {
+                    if (!keyword) return;
+                    if (keyword.toLowerCase() === 'i') {
+                        const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
+                        highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
+                    } else {
+                        const regex = new RegExp(keyword, 'gi');
+                        highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
+                    }
+                });
+                // Section label for catchall
+                let sectionLabel = '';
+                if (isCatchall && entry.section) {
+                    const display = sectionNumberToDisplay[entry.section] || `Transcript ${entry.section}`;
+                    sectionLabel = `<span style="color:#aaa;font-size:0.95em;margin-left:12px;">${display}</span>`;
+                }
+                const lineId = getLineId(entry, isCatchall);
+                resultsHTML += `
+                <li id="${lineId}">
+                    <div class="checkbox-line">
+                        <input type="checkbox" class="line-checkbox" data-line-index="${entry.index}" data-section="${isCatchall && entry.section ? entry.section : ''}">
+                        <div>
+                            <strong>
+                                <a href="#" class="jump-to-line" data-line-index="${entry.index}" data-section="${isCatchall && entry.section ? entry.section : ''}" style="color:#5c6bc0;text-decoration:underline;cursor:pointer;">
+                                    ${entry.time}
+                                </a>
+                            </strong>
+                            ${sectionLabel}<br>${highlightedText}
+                        </div>
+                    </div>
+                </li>`;
+            });
+            resultsHTML += '</ol>';
+            resultsDiv.innerHTML = resultsHTML;
+            setupCheckboxSelection();
 
-    // Add click listeners to each timestamp link
-    document.querySelectorAll('.jump-to-line').forEach(item => {
-        item.addEventListener('click', function(e) {
-            e.preventDefault();
-            const lineIndex = this.getAttribute('data-line-index');
-            showFullTranscriptAndScrollTo(lineIndex);
-        });
-    });
-}
+            // Add click listeners to each timestamp link
+            document.querySelectorAll('.jump-to-line').forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const lineIndex = this.getAttribute('data-line-index');
+                    const section = this.getAttribute('data-section');
+                    showFullTranscriptAndScrollTo(lineIndex, section);
+                });
+            });
+        }
 
-// Setup checkbox selection logic (shift-select, show/hide copy button)
+        // Setup checkbox selection logic (shift-select, show/hide copy button)
 function setupCheckboxSelection() {
     const checkboxes = Array.from(document.querySelectorAll('.line-checkbox'));
     const copyBtn = document.getElementById('copySelectedBtn');
