@@ -678,8 +678,8 @@ body.darkmode .copy-selected-btn:hover {
                     if (matchingEntries.length > 0) {
                         renderTranscriptWithCheckboxes(matchingEntries, keywordsArray);
                     } else {
-                        resultsDiv.innerText = 'No matching entries found.';
-                        document.getElementById('copySelectedBtn').style.display = 'none';
+                        // No matches: show full transcript
+                        renderTranscriptWithCheckboxes(entries, keywordsArray);
                     }
                 })
                 .catch(error => {
@@ -769,7 +769,7 @@ body.darkmode .copy-selected-btn:hover {
                 });
         });
 
-        // Helper to render transcript lines with checkboxes and clickable timestamps
+        // Helper to render transcript lines with checkboxes and clickable timestamp
 function renderTranscriptWithCheckboxes(entries, highlightKeywords = []) {
     const resultsDiv = document.getElementById('results');
     let resultsHTML = '<ol style="font-family: inherit;">';
