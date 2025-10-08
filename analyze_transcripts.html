@@ -347,25 +347,16 @@ body.darkmode .copy-selected-btn:hover {
             <h1 class="page-header" style="margin-right: 24px;"><span>Analyze</span> Transcripts</h1>
             <!-- Transcript selection dropdown -->
             <select id="transcriptSelect" class="transcript-select">
-                <option value="">Please Select a Transcript...</option>
-                <option value="Douglas Annular ring kiss.srt">Douglas Annular ring kiss</option>
-                <option value="Douglas Full moon mosaic.srt">Douglas Full moon mosaic</option>
-                <option value="Douglas Ohm.srt">Douglas Ohm</option>
-                <option value="Douglas terminator.srt">Douglas terminator</option>
-                <option value="Hansen Full moon.srt">Hansen Full moon</option>
-                <option value="Hansen Recording While Photographing.srt">Hansen Recording While Photographing</option>
-                <option value="Hansen Swirls 22.srt">Hansen Swirls 22</option>
-                <option value="Hansen Terminator.srt">Hansen Terminator</option>
-                <option value="Koch 1.srt">Koch 1</option>
-                <option value="Koch 2.srt">Koch 2</option>
-                <option value="Koch 3.srt">Koch 3</option>
-                <option value="Koch 4.srt">Koch 4</option>
-                <option value="Koch 5.srt">Koch 5</option>
-                <option value="Koch 19.srt">Koch 19</option>
-                <option value="Koch 20.srt">Koch 20</option>
-                <option value="Koch 21.srt">Koch 21</option>
-                <option value="Koch 22.srt">Koch 22</option>
-                <option value="Koch 23.srt">Koch 23</option>
+                <option value="Transcript_001_MareIngenii_corrected.srt">Audio 001</option>
+                <option value="Transcript_002_Orientale_corrected.srt">Audio 002</option>
+                <option value="Transcript_003_Unknown_corrected.srt">Audio 003</option>
+                <option value="Transcript_004_Leibnitz_corrected.srt">Audio 004</option>
+                <option value="Transcript_005_Oppenheimer_ApolloBasin_corrected.srt">Audio 005</option>
+                <option value="Transcript_006_unknown_corrected.srt">Audio 006</option>
+                <option value="Transcript_007_Earthrise_corrected.srt">Audio 007</option>
+                <option value="Transcript_008._Ingenii_2_corrected.srt">Audio 008</option>
+                <option value="Transcript_009_ImpactFlash_corrected.srt">Audio 009</option>
+                <option value="Transcript_010_hello_corrected.srt">Audio 010</option>
                 <option value="catchall.srt">Catchall</option>
                 <!-- Add more transcript files as needed -->
             </select>
@@ -374,6 +365,7 @@ body.darkmode .copy-selected-btn:hover {
             Show Full Transcript (Highlight All Keywords)
         </button>
     </div>
+    <h5>By Default - when a transcript is displayed, only lines with a keyword detected will be shown, click show full transcript to read the entire output, or click on a time to be brought to the occurrence of that utterance.</h3>
     <div class="dashboard-container">
         <div class="flex-container">
             <div class="grey-box" style="flex: 2;">
@@ -606,6 +598,7 @@ body.darkmode .copy-selected-btn:hover {
             "Transcript_007_Earthrise_corrected.srt": "Audio 007",
             "Transcript_008._Ingenii_2_corrected.srt": "Audio 008",
             "Transcript_009_ImpactFlash_corrected.srt": "Audio 009",
+            "Transcript_010_hello_corrected.srt": "Audio 010",
             "catchall.srt": "Catchall"
         };
 
@@ -619,7 +612,8 @@ body.darkmode .copy-selected-btn:hover {
             "006": "Audio 006",
             "007": "Audio 007",
             "008": "Audio 008",
-            "009": "Audio 009"
+            "009": "Audio 009",
+            "010": "Audio 010"
             // ...add more if needed...
         };
 
@@ -803,9 +797,36 @@ function getLineId(entry, isCatchall) {
 
         // Helper to show full transcript and scroll to a specific line
         function showFullTranscriptAndScrollTo(targetIndex, targetSection) {
-            const transcriptFile = getSelectedTranscriptFile();
+            let transcriptFile = getSelectedTranscriptFile();
             const resultsDiv = document.getElementById('results');
             resultsDiv.innerHTML = 'Loading...';
+
+            // If we're currently viewing catchall and have a target section, switch to that specific audio file
+            if (transcriptFile === "catchall.srt" && targetSection) {
+                const sectionPadded = targetSection.toString().padStart(3, '0');
+                transcriptFile = `Transcript_${sectionPadded}_corrected.srt`;
+                
+                // Find the exact filename from our mapping
+                const transcriptFiles = {
+                    "001": "Transcript_001_MareIngenii_corrected.srt",
+                    "002": "Transcript_002_Orientale_corrected.srt", 
+                    "003": "Transcript_003_Unknown_corrected.srt",
+                    "004": "Transcript_004_Leibnitz_corrected.srt",
+                    "005": "Transcript_005_Oppenheimer_ApolloBasin_corrected.srt",
+                    "006": "Transcript_006_unknown_corrected.srt",
+                    "007": "Transcript_007_Earthrise_corrected.srt",
+                    "008": "Transcript_008._Ingenii_2_corrected.srt",
+                    "009": "Transcript_009_ImpactFlash_corrected.srt",
+                    "010": "Transcript_010_hello_corrected.srt"
+                };
+                
+                if (transcriptFiles[sectionPadded]) {
+                    transcriptFile = transcriptFiles[sectionPadded];
+                    // Update the dropdown to reflect the new selection
+                    const transcriptSelect = document.getElementById('transcriptSelect');
+                    transcriptSelect.value = transcriptFile;
+                }
+            }
 
             // Get all keywords from dropdown (excluding empty)
             const keywordSelect = document.getElementById('keywordSelect');
@@ -836,11 +857,13 @@ function getLineId(entry, isCatchall) {
                     // Scroll to the target line after rendering
                     setTimeout(() => {
                         let targetElem;
-                        if (isCatchall && targetSection) {
-                            // Pad section to 3 digits for consistency
+                        // If we switched from catchall to individual transcript, use simple line ID
+                        if (getSelectedTranscriptFile() === "catchall.srt" && targetSection) {
+                            // Still in catchall mode
                             const section = targetSection.toString().padStart(3, '0');
                             targetElem = document.getElementById(`transcript-line-${section}-${targetIndex}`);
                         } else {
+                            // Individual transcript mode (including when we switched from catchall)
                             targetElem = document.getElementById('transcript-line-' + targetIndex);
                         }
                         if (targetElem) {
