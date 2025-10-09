@@ -347,16 +347,21 @@ body.darkmode .copy-selected-btn:hover {
             <h1 class="page-header" style="margin-right: 24px;"><span>Analyze</span> Transcripts</h1>
             <!-- Transcript selection dropdown -->
             <select id="transcriptSelect" class="transcript-select">
-                <option value="Transcript_001_MareIngenii_corrected.srt">Audio 001</option>
-                <option value="Transcript_002_Orientale_corrected.srt">Audio 002</option>
-                <option value="Transcript_003_Unknown_corrected.srt">Audio 003</option>
-                <option value="Transcript_004_Leibnitz_corrected.srt">Audio 004</option>
-                <option value="Transcript_005_Oppenheimer_ApolloBasin_corrected.srt">Audio 005</option>
-                <option value="Transcript_006_unknown_corrected.srt">Audio 006</option>
-                <option value="Transcript_007_Earthrise_corrected.srt">Audio 007</option>
-                <option value="Transcript_008._Ingenii_2_corrected.srt">Audio 008</option>
-                <option value="Transcript_009_ImpactFlash_corrected.srt">Audio 009</option>
-                <option value="Transcript_010_hello_corrected.srt">Audio 010</option>
+                <option value="Transcript_001_23-40-00-RW-JH.srt">23-40-00-RW-JH</option>
+                <option value="Transcript_002_23-45-00-RW-JH.srt">23-45-00-RW-JH</option>
+                <option value="Transcript_003_23-50-00-RW-JH.srt">23-50-00-RW-JH</option>
+                <option value="Transcript_004_00-00-00-RW-JH.srt">00-00-00-RW-JH</option>
+                <option value="Transcript_005_00-05-00-RW-JH.srt">00-05-00-RW-JH</option>
+                <option value="Transcript_006_00-30-00-VG-CK.srt">00-30-00-VG-CK</option>
+                <option value="Transcript_007_00-40-00-VG-CK.srt">00-40-00-VG-CK</option>
+                <option value="Transcript_008_00-45-00-VG-CK.srt">00-45-00-VG-CK</option>
+                <option value="Transcript_009_00-50-00-VG-CK.srt">00-50-00-VG-CK</option>
+                <option value="Transcript_010_01-05-00-VG-CK.srt">01-05-00-VG-CK</option>
+                <option value="Transcript_011_01-25-00-JH-RW.srt">01-25-00-JH-RW</option>
+                <option value="Transcript_012_01-45-00-JH-RW.srt">01-45-00-JH-RW</option>
+                <option value="Transcript_013_01-50-00-JH-RW.srt">01-50-00-JH-RW</option>
+                <option value="Transcript_014_02-00-00-JH-RW.srt">02-00-00-JH-RW</option>
+                <option value="Transcript_015_02-05-00-JH-RW.srt">02-05-00-JH-RW</option>
                 <option value="catchall.srt">Catchall</option>
                 <!-- Add more transcript files as needed -->
             </select>
@@ -506,7 +511,7 @@ body.darkmode .copy-selected-btn:hover {
     <option value="Schmidt">Schmidt</option>
     <option value="Schrödinger Basin">Schrödinger Basin</option>
     <option value="Sinus Aestueem Dark Spots">Sinus Aestueem Dark Spots</option>
-    <option value="South Pole-Aitken Basin">South Pole-Aitken Basin</option>
+    <option value="South Pole Aitken Basin">South Pole Aitken Basin</option>
     <option value="Sulpicius Gallus">Sulpicius Gallus</option>
     <option value="Seleucus">Seleucus</option>
     <option value="Slater Plain Artemis Region">Slater Plain Artemis Region</option>
@@ -589,32 +594,41 @@ body.darkmode .copy-selected-btn:hover {
 
         // Helper: Map transcript file names to display names
         const transcriptDisplayNames = {
-            "Transcript_001_MareIngenii_corrected.srt": "Audio 001",
-            "Transcript_002_Orientale_corrected.srt": "Audio 002",
-            "Transcript_003_Unknown_corrected.srt": "Audio 003",
-            "Transcript_004_Leibnitz_corrected.srt": "Audio 004",
-            "Transcript_005_Oppenheimer_ApolloBasin_corrected.srt": "Audio 005",
-            "Transcript_006_unknown_corrected.srt": "Audio 006",
-            "Transcript_007_Earthrise_corrected.srt": "Audio 007",
-            "Transcript_008._Ingenii_2_corrected.srt": "Audio 008",
-            "Transcript_009_ImpactFlash_corrected.srt": "Audio 009",
-            "Transcript_010_hello_corrected.srt": "Audio 010",
+            "Transcript_001_23-40-00-RW-JH.srt": "23-40-00-RW-JH",
+            "Transcript_002_23-45-00-RW-JH.srt": "23-45-00-RW-JH",
+            "Transcript_003_23-50-00-RW-JH.srt": "23-50-00-RW-JH",
+            "Transcript_004_00-00-00-RW-JH.srt": "00-00-00-RW-JH",
+            "Transcript_005_00-05-00-RW-JH.srt": "00-05-00-RW-JH",
+            "Transcript_006_00-30-00-VG-CK.srt": "00-30-00-VG-CK",
+            "Transcript_007_00-40-00-VG-CK.srt": "00-40-00-VG-CK",
+            "Transcript_008_00-45-00-VG-CK.srt": "00-45-00-VG-CK",
+            "Transcript_009_00-50-00-VG-CK.srt": "00-50-00-VG-CK",
+            "Transcript_010_01-05-00-VG-CK.srt": "01-05-00-VG-CK",
+            "Transcript_011_01-25-00-JH-RW.srt": "01-25-00-JH-RW",
+            "Transcript_012_01-45-00-JH-RW.srt": "01-45-00-JH-RW",
+            "Transcript_013_01-50-00-JH-RW.srt": "01-50-00-JH-RW",
+            "Transcript_014_02-00-00-JH-RW.srt": "02-00-00-JH-RW",
+            "Transcript_015_02-05-00-JH-RW.srt": "02-05-00-JH-RW",
             "catchall.srt": "Catchall"
         };
 
         // Helper: Map transcript section numbers to display names
         const sectionNumberToDisplay = {
-            "001": "Audio 001",
-            "002": "Audio 002",
-            "003": "Audio 003",
-            "004": "Audio 004",
-            "005": "Audio 005",
-            "006": "Audio 006",
-            "007": "Audio 007",
-            "008": "Audio 008",
-            "009": "Audio 009",
-            "010": "Audio 010"
-            // ...add more if needed...
+            "001": "23-40-00-RW-JH",
+            "002": "23-45-00-RW-JH",
+            "003": "23-50-00-RW-JH",
+            "004": "00-00-00-RW-JH",
+            "005": "00-05-00-RW-JH",
+            "006": "00-30-00-VG-CK",
+            "007": "00-40-00-VG-CK",
+            "008": "00-45-00-VG-CK",
+            "009": "00-50-00-VG-CK",
+            "010": "01-05-00-VG-CK",
+            "011": "01-25-00-JH-RW",
+            "012": "01-45-00-JH-RW",
+            "013": "01-50-00-JH-RW",
+            "014": "02-00-00-JH-RW",
+            "015": "02-05-00-JH-RW"
         };
 
         // Enhanced SRT parser for catchall: detects section headers and assigns section to each entry
@@ -808,16 +822,21 @@ function getLineId(entry, isCatchall) {
                 
                 // Find the exact filename from our mapping
                 const transcriptFiles = {
-                    "001": "Transcript_001_MareIngenii_corrected.srt",
-                    "002": "Transcript_002_Orientale_corrected.srt", 
-                    "003": "Transcript_003_Unknown_corrected.srt",
-                    "004": "Transcript_004_Leibnitz_corrected.srt",
-                    "005": "Transcript_005_Oppenheimer_ApolloBasin_corrected.srt",
-                    "006": "Transcript_006_unknown_corrected.srt",
-                    "007": "Transcript_007_Earthrise_corrected.srt",
-                    "008": "Transcript_008._Ingenii_2_corrected.srt",
-                    "009": "Transcript_009_ImpactFlash_corrected.srt",
-                    "010": "Transcript_010_hello_corrected.srt"
+                    "001": "Transcript_001_23-40-00-RW-JH.srt",
+                    "002": "Transcript_002_23-45-00-RW-JH.srt",
+                    "003": "Transcript_003_23-50-00-RW-JH.srt",
+                    "004": "Transcript_004_00-00-00-RW-JH.srt",
+                    "005": "Transcript_005_00-05-00-RW-JH.srt",
+                    "006": "Transcript_006_00-30-00-VG-CK.srt",
+                    "007": "Transcript_007_00-40-00-VG-CK.srt",
+                    "008": "Transcript_008_00-45-00-VG-CK.srt",
+                    "009": "Transcript_009_00-50-00-VG-CK.srt",
+                    "010": "Transcript_010_01-05-00-VG-CK.srt",
+                    "011": "Transcript_011_01-25-00-JH-RW.srt",
+                    "012": "Transcript_012_01-45-00-JH-RW.srt",
+                    "013": "Transcript_013_01-50-00-JH-RW.srt",
+                    "014": "Transcript_014_02-00-00-JH-RW.srt",
+                    "015": "Transcript_015_02-05-00-JH-RW.srt"
                 };
                 
                 if (transcriptFiles[sectionPadded]) {

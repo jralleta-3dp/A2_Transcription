@@ -1,1676 +1,1394 @@
 ### Transcript 001
 
 1
-00:00:01,258 --> 00:00:05,221
-All right, next up is Mare Ingenii.
+23:40:02,068 --> 23:40:07,270
+All right, this is Andre, and I'm doing my target six.
 
 2
-00:00:05,241 --> 00:00:10,345
-I'm going to the forward window with the camera in hand.
+23:40:07,570 --> 23:40:09,630
+This is the Orientale annular ring.
 
 3
-00:00:10,466 --> 00:00:16,310
-It's just me up here trying to make a lot of observations, zooming in with my camera here.
+23:40:10,751 --> 23:40:17,012
+As I'm looking at Orientale, I'm at the, oh, thank you.
 
 4
-00:00:16,470 --> 00:00:19,433
-So I'm just going to do some talk out loud for you.
+23:40:29,436 --> 23:40:29,536
+Cool.
 
 5
-00:00:19,453 --> 00:00:24,877
-All right, so Ingenii, let me first orient myself.
+23:40:30,145 --> 23:40:34,427
+All right, so for Orientale, I have it identified.
 
 6
-00:00:25,157 --> 00:00:28,620
-I've got no oblique view from the lunar
+23:40:34,787 --> 23:40:38,229
+It's got the outer ring and the inner ring.
 
 7
-00:00:30,382 --> 00:00:31,524
-targeting plan.
+23:40:38,409 --> 23:40:40,310
+There is a dark mare in the middle.
 
 8
-00:00:31,544 --> 00:00:35,389
-Let's see, north there, so go south.
+23:40:40,830 --> 23:40:42,811
+It's a dark gray overall.
 
 9
-00:00:37,012 --> 00:00:38,714
-Really just looking along the terminator.
+23:40:42,831 --> 23:40:46,732
+There's some shades of lighter gray as well.
 
 10
-00:00:39,696 --> 00:00:43,561
-That's what I expect my main indicator will be.
+23:40:47,133 --> 23:40:54,016
+And then on the 7 and 8 o'clock position of Orientale, I see the annular ring.
 
 11
-00:00:43,581 --> 00:00:45,584
-This is a pretty cool looking
+23:40:54,536 --> 23:40:58,338
+I kind of describe it as a kiss mark or a lipstick mark.
 
 12
-00:00:47,372 --> 00:00:48,673
-cool looking mare.
+23:40:59,998 --> 23:41:13,004
+is there's a darker mare on the inboard side of the annular ring at that 7-8 o'clock position and a lighter mare on the outboard side of the annular ring on the edge there.
 
 13
-00:00:48,813 --> 00:00:51,033
-Okay, so I see, okay, I've found SBA.
+23:41:13,024 --> 23:41:21,348
+Those are where the lips would be and I'm noticing that the annular ring is on the
 
 14
-00:00:51,053 --> 00:00:53,574
-I'm looking just along the terminator.
+23:41:21,988 --> 23:41:29,610
+edge of the Orientale Basin where it doesn't look like the outer ring is very prominent or high.
 
 15
-00:00:53,594 --> 00:00:58,136
-It's like from this image that my plan.
+23:41:29,670 --> 23:41:45,295
+It looks kind of flat maybe because it's lower in elevation and on the opposite side at the two or three o'clock you can see Orientale's more prominent features, rugged terrain, but more on the southeast side it looks flat
 
 16
-00:00:58,156 --> 00:01:04,098
-Looking for mare info, got some irregular shapes spilling out.
+23:41:46,733 --> 23:42:00,936
+And as I notice on the most outward piece of this ring for the bottom lip, I'll call it, on the kiss, it actually starts to, as you move outward, narrow into a triangle.
 
 17
-00:01:07,340 --> 00:01:09,020
-Yeah, okay, I'm not really seeing it yet.
+23:42:01,456 --> 23:42:12,058
+And then it looks like there's a small point that's somewhat separate of this bottom lip, almost like a bottom lip ring, I would say.
 
 18
-00:01:09,160 --> 00:01:10,941
-I'm just continue looking down.
+23:42:12,858 --> 23:42:14,398
+So that's an interesting feature.
 
 19
-00:01:13,302 --> 00:01:16,083
-Okay, I'm seeing a crater that has these kind of five
+23:42:15,020 --> 23:42:22,303
+where I never noticed that until looking at it in detail here, the extra dark patch that's outboard of the kiss itself.
 
 20
-00:01:17,311 --> 00:01:20,954
-like, craters aligned within it.
+23:42:23,523 --> 23:42:36,689
+And then in between the kiss and the dark mare of orientale, there's just a very light, very small crater or patch of albedo.
 
 21
-00:01:24,157 --> 00:01:26,579
-You know, in this kind of elongated snowman-looking crater.
+23:42:36,829 --> 23:42:41,751
+So I'm not sure if that's a crater that would be above the upper lip on the left side.
 
 22
-00:01:26,599 --> 00:01:28,200
-Oh, okay, yeah, yeah, yeah.
+23:42:42,931 --> 23:42:44,712
+And then to the left of that, there's a little
 
 23
-00:01:28,220 --> 00:01:29,081
-Okay, now I'm seeing it.
+23:42:45,297 --> 23:42:46,759
+white plain field as well.
 
 24
-00:01:29,281 --> 00:01:38,068
-It kind of looks, this Injunai kind of looks like a, almost like an octopus shape, with the kind of legs of the octopus facing away from the Terminator.
-
-25
-00:01:38,689 --> 00:01:39,990
-All right, okay, I'm seeing it now.
-
-26
-00:01:40,050 --> 00:01:43,813
-I think I was trying to look a little too early because it was still in shadow.
-
-27
-00:01:44,333 --> 00:01:45,895
-So, yeah, I see it now.
-
-28
-00:01:47,421 --> 00:01:56,545
-And it's a really clear circular shape where the boundary facing away from the Terminator is at the broken part of this kind of circle.
-
-29
-00:01:56,585 --> 00:02:04,629
-So it's not a complete circle because when I zoom in with my camera, there's almost this like elongated island in the broken boundary.
-
-30
-00:02:05,089 --> 00:02:07,050
-And that island is kind of like maybe less than a quarter.
-
-31
-00:02:08,347 --> 00:02:09,408
-of this overall shape.
-
-32
-00:02:09,989 --> 00:02:15,816
-And again, that kind of broken part of that circle is facing away from the Terminator.
-
-33
-00:02:16,297 --> 00:02:17,078
-That's really cool.
-
-34
-00:02:18,463 --> 00:02:28,209
-But yeah, overall Engine Eye also has like a raised, like bigger ridge that's like around and like encircling the crater.
-
-35
-00:02:29,709 --> 00:02:31,350
-It's at least an interrelating part of it.
-
-36
-00:02:32,511 --> 00:02:39,975
-Kind of looks like a C-shape from where I'm at now, where the opening of the C is kind of disappearing into the darkness of the Terminator.
-
-37
-00:02:40,776 --> 00:02:43,517
-So maybe I'll just keep an eye on that for the next time I come around here.
-
-38
-00:02:45,693 --> 00:02:48,916
-But yeah, the interior doesn't look solid.
-
-39
-00:02:49,197 --> 00:02:55,163
-It actually kind of has some albedo variations where there is lighter and darker, but I mean, I'm not really seeing a pattern in there.
-
-40
-00:02:55,183 --> 00:02:58,486
-So it doesn't really look smooth either.
-
-41
-00:02:58,506 --> 00:03:04,192
-That basin kind of looks undulating or hummocky, maybe even seeing a wrinkle in there.
-
-42
-00:03:06,630 --> 00:03:12,234
-Yeah, and I'm also seeing like maybe, if I zoom in, I think I do see like little specks and little craters in here.
-
-43
-00:03:13,155 --> 00:03:25,083
-But yeah, that wrinkle is parallel and like kind of in the same strike as that island of that boundary that I described, that kind of broken outer boundary of Ingenii.
-
-44
-00:03:25,103 --> 00:03:27,285
-So that's cool.
-
-45
-00:03:27,805 --> 00:03:31,848
-I can't see too much more, so I'll end it there and then I'll come back to this in a little bit.
+23:42:48,120 --> 23:42:53,886
+And I think that's mostly it for this annular ring, but very interesting feature.
 
 ### Transcript 002
 
 1
-00:00:01,268 --> 00:00:04,716
-Okay, next up on the LTP, Orientale.
+23:45:01,222 --> 23:45:05,037
+All right, coming up on the Dewar Crater region here.
 
 2
-00:00:05,659 --> 00:00:11,071
-Alright, looks like they're specifically asking us to focus on the angular range, but I need to look at the LGR to refresh my memory.
+23:45:06,882 --> 23:45:11,584
+I think I'll be, well, someone will be getting the opportunity to look at it again later.
 
 3
-00:00:12,642 --> 00:00:15,205
-Okay, yeah, beautiful impact basin right here.
+23:45:12,744 --> 23:45:20,328
+But for right now, I see it's fairly close to the terminator edge.
 
 4
-00:00:15,825 --> 00:00:17,727
-Let me try to make sure I'm looking at the right thing here, though.
+23:45:20,788 --> 23:45:32,413
+I know I'm looking for a sort of albedo anomaly here and looking for some sort of like darker material that kind of comes out from the bottom of Dewar.
 
 5
-00:00:18,188 --> 00:00:21,852
-Okay, yeah, pretty distinctive feature, and I know it's one of our geography anchor points.
+23:45:34,133 --> 23:45:35,454
+I think I see it.
 
 6
-00:00:22,272 --> 00:00:24,795
-Jacob, don't worry, I did my geography homework.
+23:45:35,834 --> 23:45:37,034
+It's more diffuse.
 
 7
-00:00:25,455 --> 00:00:26,376
-All right, Angela's next to me.
+23:45:37,514 --> 23:45:46,776
+I don't really see, it's not like constrained or confined to a crater, but rather it appears to be darker material.
 
 8
-00:00:26,416 --> 00:00:30,681
-I know she's working on getting it in her camera view, but for now I'll say, whew, this is a beauty.
+23:45:46,836 --> 23:45:56,579
+I don't see a ton of like vibrant colors, but it's definitely darker material that's kind of coming out like to the, almost like the southeast of Dewar Crater.
 
 9
-00:00:30,721 --> 00:00:31,401
-Angela, you see this?
+23:45:59,780 --> 23:46:01,660
+Let's see, size, it's probably like,
 
 10
-00:00:31,882 --> 00:00:33,784
-Uh, yeah, just give me, give me a second.
+23:46:03,065 --> 23:46:11,272
+maybe one Dewar Crater diameter, long away from, again, the southeast edge of Dewar Crater.
 
 11
-00:00:33,864 --> 00:00:35,245
-I'm just trying to get to the right, uh,
+23:46:11,292 --> 23:46:19,518
+And again, it's diffuse, even the sort of like the boundaries of the Albedo Anomaly itself are fairly diffuse.
 
 12
-00:00:36,006 --> 00:00:36,687
-Oh, no.
+23:46:20,719 --> 23:46:26,604
+It also kind of comes up like sort of to the east and the north a bit, again, diffused.
 
 13
-00:00:36,827 --> 00:00:37,608
-All right.
+23:46:26,684 --> 23:46:29,487
+It almost looks like, I don't know, like someone
 
 14
-00:00:37,688 --> 00:00:37,908
-Yeah.
+23:46:30,047 --> 23:46:38,279
+sprayed flour on the lunar surface or something and it sort of came out in an irregular pattern from the middle of Dewar crater.
 
 15
-00:00:38,009 --> 00:00:38,790
-Oh, that's that.
+23:46:40,001 --> 23:46:41,664
+Let's see what else I can tell you here.
 
 16
-00:00:39,190 --> 00:00:40,071
-Oh, wow.
+23:46:46,018 --> 23:46:52,700
+Texture-wise, it doesn't appear to have an underlying consistent texture that's associated with the albedo anomaly.
 
 17
-00:00:40,351 --> 00:00:40,652
-I know.
+23:46:52,720 --> 23:47:01,142
+I can't quite tell if there's any sort of surface texture associated with it, which makes me think there likely isn't.
 
 18
-00:00:40,712 --> 00:00:42,394
-Beautiful multi-ring base in here.
+23:47:01,202 --> 23:47:07,004
+It really just does appear to be a darker patch of lunar surface.
 
 19
-00:00:42,414 --> 00:00:48,020
-It's off to the left of Oceanus Procellarum, maybe at a distance of like one Orientale diameter.
+23:47:07,564 --> 23:47:08,284
+I hope that's helpful.
 
 20
-00:00:48,060 --> 00:00:49,182
-It's roughly circular.
-
-21
-00:00:49,762 --> 00:00:51,264
-Two primary sets of rings.
-
-22
-00:00:52,045 --> 00:01:07,202
-which rim kind of a dark mare patch i think in the middle the mare patch is roughly circular maybe slightly elongate uh in the north south axis the dark patch is quite dark especially at its southern end but the northern end has a much brighter albedo
-
-23
-00:01:07,402 --> 00:01:09,484
-Yeah, I got some good, got some good pictures over here.
-
-24
-00:01:09,504 --> 00:01:12,566
-Alright, did you, cause like, I can't quite make out the detail with my naked eye.
-
-25
-00:01:12,586 --> 00:01:14,767
-Can you look at the northern end of the Mare patch?
-
-26
-00:01:14,807 --> 00:01:23,934
-I'd be interested to hear your take, but it looks like maybe a much brighter, and I think maybe they said that that means younger crater came in here and it's sending its ejecta down into the Mare patch?
-
-27
-00:01:24,234 --> 00:01:26,036
-Yeah, let me just try and get this focus.
-
-28
-00:01:26,096 --> 00:01:28,518
-It's kind of hard to, to kind of stay in.
-
-29
-00:01:29,478 --> 00:01:32,122
-in with what I'm trying to target when I'm moving around a little bit.
-
-30
-00:01:32,142 --> 00:01:34,666
-So just give me a second while I'm rolling on here.
-
-31
-00:01:34,826 --> 00:01:35,067
-All right.
-
-32
-00:01:35,107 --> 00:01:36,509
-Just want to make sure I'm not crazy.
-
-33
-00:01:36,549 --> 00:01:37,831
-Here, let me help you with that.
-
-34
-00:01:37,971 --> 00:01:38,131
-Hold on.
-
-35
-00:01:38,151 --> 00:01:39,052
-Yeah, here.
-
-36
-00:01:39,072 --> 00:01:41,215
-Do you want to use the camera to just get it better?
-
-37
-00:01:41,235 --> 00:01:42,097
-No, no, no.
-
-38
-00:01:42,117 --> 00:01:42,497
-You got it.
-
-39
-00:01:42,537 --> 00:01:42,818
-You got it.
-
-40
-00:01:42,838 --> 00:01:44,300
-I'll just anger you here for a second.
-
-41
-00:01:44,360 --> 00:01:44,400
-OK.
-
-42
-00:01:47,594 --> 00:01:48,574
-All right, let's see.
-
-43
-00:01:48,634 --> 00:01:51,375
-I see a few other younger craters on top of the mare patch.
-
-44
-00:01:51,615 --> 00:02:03,098
-My personal favorite, wow, now that I'm looking at this, it's a crater just to the east of like the main big mare patch that maybe itself, the crater looks like it has its own tiny little patch of dark material within it.
-
-45
-00:02:03,578 --> 00:02:04,019
-Interesting.
-
-46
-00:02:04,079 --> 00:02:06,719
-I might need to hear the science team's interpretation of that one.
-
-47
-00:02:06,779 --> 00:02:09,260
-Angela, can you get a picture of my favorite crater over here?
-
-48
-00:02:09,380 --> 00:02:10,941
-Yeah, point it up, right there.
-
-49
-00:02:11,021 --> 00:02:14,522
-It's this one, right off to the right side of that mare patch.
-
-50
-00:02:14,562 --> 00:02:16,482
-Look at it, it's got a little baby mare patch in it.
-
-51
-00:02:16,662 --> 00:02:17,383
-Oh, I see it!
-
-52
-00:02:17,503 --> 00:02:18,003
-It's so cute!
-
-53
-00:02:18,043 --> 00:02:19,043
-Look at the picture!
-
-54
-00:02:19,063 --> 00:02:20,244
-Oh, that's awesome.
-
-55
-00:02:20,564 --> 00:02:22,124
-Alright, I think we got it, science.
-
-56
-00:02:22,144 --> 00:02:26,205
-Okay, so, sorry, I know I'm getting really distracted by these smaller craters.
-
-57
-00:02:26,225 --> 00:02:27,246
-You know how I love craters.
-
-58
-00:02:27,806 --> 00:02:29,386
-Back to Orientale proper here.
-
-59
-00:02:30,107 --> 00:02:36,629
-Looks like its mare patch has rounded edges in most places, whereas the two rings have sort of like a scalloped look.
-
-60
-00:02:37,469 --> 00:02:40,693
-The inner of the two rings looks like it's got some topography to it.
-
-61
-00:02:40,713 --> 00:02:42,675
-It's not fully continuous all the way around.
-
-62
-00:02:43,095 --> 00:02:52,445
-Not sure if it's just an illumination effect, but the that southern end of the ring looks like it has more of like a topography pop to it, especially down at like the five to six o'clock position.
-
-63
-00:02:53,225 --> 00:02:57,110
-I say that because there's like a higher albedo section of that inner ring that just pops.
-
-64
-00:02:57,770 --> 00:03:17,387
-over up on the northeast side of the inner ring maybe between like i don't know midnight and three o'clock there's a lot going on wow geez throughout that whole section there's a patch of the dark low albedo mare-like material it starts just inside the inner ring it's not too big all right wow and look distracted i know i'm supposed to be thinking about the annular ring do you remember what they mean by annular ring
-
-65
-00:03:18,468 --> 00:03:19,649
-Uh, yeah, it's in your lunar target.
-
-66
-00:03:19,749 --> 00:03:20,530
-It's in your lunar dot!
-
-67
-00:03:20,871 --> 00:03:23,114
-All right, fine, yeah, check the tape.
-
-68
-00:03:23,514 --> 00:03:26,759
-All right, I can't quite tell here, but maybe they mean this dark circle down here to the south.
-
-69
-00:03:26,939 --> 00:03:28,741
-Oh yeah, that's ringing a bell from training.
-
-70
-00:03:28,781 --> 00:03:30,984
-Now that I'm looking at this... Angela, what is this?
-
-71
-00:03:31,065 --> 00:03:33,308
-It's a circular feature, but it's definitely not a crater.
-
-72
-00:03:33,828 --> 00:04:02,471
-or I don't really see any topography it looks kind of like just like a dark ring of material like lower albedo that looks kind of like I don't know superficial on top of everything else I even see a place at like three o'clock on the ring where it's sitting on top of the inner Orientale ring I I remember my superposition science team don't worry it's younger than that ring the ring is more concentrated and darker for like the whole top half whereas like the southern half is kind of diffuse and I think slightly higher in albedo is what I'm seeing but Angela I'd like to hear if you you see the same
-
-73
-00:04:03,091 --> 00:04:05,854
-Yeah, I think it's a little bit higher in albedo.
-
-74
-00:04:06,334 --> 00:04:06,895
-That's what I'd agree.
-
-75
-00:04:06,915 --> 00:04:08,496
-But don't worry, I'm going to get pictures.
-
-76
-00:04:08,516 --> 00:04:09,717
-Because really, I don't know.
-
-77
-00:04:09,757 --> 00:04:10,778
-I trust my eyes right now.
-
-78
-00:04:10,798 --> 00:04:13,841
-I've been staring at this bright moon for a little bit too long.
-
-79
-00:04:14,762 --> 00:04:16,483
-It can never be too long.
-
-80
-00:04:17,064 --> 00:04:17,284
-All right.
-
-81
-00:04:17,304 --> 00:04:17,925
-Well, OK.
-
-82
-00:04:17,985 --> 00:04:18,766
-I've been talking for a while.
-
-83
-00:04:18,786 --> 00:04:19,646
-I have no idea how long.
-
-84
-00:04:19,666 --> 00:04:21,168
-I hope this didn't get us off timeline.
-
-85
-00:04:21,548 --> 00:04:22,849
-All right, last big picture comment.
-
-86
-00:04:22,909 --> 00:04:25,730
-I know you want us to talk about facial relationships.
-
-87
-00:04:25,810 --> 00:04:30,653
-I do see a really bright, really small crater off to the east side of Orientale.
-
-88
-00:04:30,713 --> 00:04:35,875
-It's got some beautiful bright rays coming out that do cross Orientale, and that's a beauty.
-
-89
-00:04:35,915 --> 00:04:37,756
-I wish I could remember what it's called.
-
-90
-00:04:38,296 --> 00:04:39,317
-And that's Orientale, folks.
-
-91
-00:04:39,637 --> 00:04:40,177
-What a ride.
-
-92
-00:04:41,218 --> 00:04:41,358
-Woo!
+23:47:08,304 --> 23:47:09,585
+Looking forward to round two.
 
 ### Transcript 003
 
 1
-00:00:02,234 --> 00:00:05,117
-All right, next up for me is a Terminator target.
+23:50:01,702 --> 23:50:05,944
+All right, moving on to Mare Inginii in Swirls, target number five.
 
 2
-00:00:06,038 --> 00:00:08,961
-I'm still in the port forward window.
+23:50:06,304 --> 23:50:16,427
+I've got a good view of it out the window, getting a little bit of glare coming across a portion of the moon, but it got Mare Inginii pretty clear.
 
 3
-00:00:08,981 --> 00:00:10,923
-I'm going to take a mosaic here.
+23:50:18,768 --> 23:50:26,772
+One of the things that immediately stands out to me is the in-bang relationships of some of the infill.
 
 4
-00:00:11,704 --> 00:00:19,933
-Some other crew members got called off on another task, so I'm going to try to go both take the pictures and description at the same time here, see how that goes.
+23:50:27,512 --> 23:50:31,554
+I expected it to be a little bit rougher, but man, it really looks smooth.
 
 5
-00:00:20,573 --> 00:00:25,220
-Capturing a mosaic now along the terminator for this target.
+23:50:33,078 --> 23:50:50,285
+The boundary relationship between the embayment and the hills, especially to the three o'clock of that feature with the 12 o'clock being the moon as it's currently oriented in the window, are really stark.
 
 6
-00:00:26,141 --> 00:00:34,972
-So again, I'm using both my eyes and camera looking up and down just over the viewfinder as I'm making these observations and taking the photos.
+23:50:50,926 --> 23:50:57,589
+So across the three o'clock, that boundary between the embayment of the two little ears that are kind of looking
 
 7
-00:00:36,133 --> 00:00:48,319
-This is a oblique view trying to capture the top, which I think our orientation right now is with the moon kind of upright or north from our current attitude.
+23:50:59,009 --> 23:51:10,060
+towards that three o'clock direction and the hills, if I call it that, just adjacent to them is really stark and really prominent from this orientation.
 
 8
-00:00:49,219 --> 00:00:56,622
-And one of the things that's really sticking out to me that I'll describe and hopefully capture it in this mosaic is the larger impact basin.
+23:51:11,942 --> 23:51:18,166
+I'm looking pretty close at any color relations or colors that stick out to me.
 
 9
-00:00:56,662 --> 00:00:59,684
-I'm not sure of the name of that one yet, but
+23:51:18,186 --> 23:51:25,371
+I'm not seeing anything immediate, but the albedo of those swirls is definitely standing out to me.
 
 10
-00:01:00,404 --> 00:01:07,333
-It's a larger impact basin with a medium-sized crater kind of at it's seven or eight o'clock.
+23:51:25,391 --> 23:51:37,499
+I can see light tone grays, but also a medium gray that are pretty stark against the background of that infilling material.
 
 11
-00:01:08,174 --> 00:01:15,462
-It's near the northern pool at least and it's the terminators right on it right now which is really making it pop.
+23:51:37,519 --> 23:51:40,641
+So I was seeing at least three tones of gray
 
 12
-00:01:16,183 --> 00:01:18,286
-So hopefully capturing good photos of that.
+23:51:41,461 --> 23:51:46,042
+no distinct colors outside that gray spectrum from my eye right now.
 
 13
-00:01:19,091 --> 00:01:22,614
-No noticeable hues or colors.
+23:51:47,123 --> 23:51:58,646
+The illumination is perfect right now, especially to pick up those hills that I was talking about at the three o'clock position, and not seeing many textures again.
 
 14
-00:01:22,874 --> 00:01:35,865
-It's mostly really dark on the west side or the left of my left right now of the terminator not seeing anything beyond that crater that I described at a larger impact basin.
+23:51:58,666 --> 23:52:08,989
+They're just really stark across the flat part of that infilling of Mare Inginii and the textures at the
 
 15
-00:01:36,425 --> 00:01:41,708
-and then it's just shades of gray as we go eastward.
+23:52:10,868 --> 23:52:17,269
+nine o'clock are starting to be a little diffuse, but that could be an illumination condition.
 
 16
-00:01:42,589 --> 00:01:46,471
-What's really popping is the smaller craters as well.
+23:52:18,710 --> 23:52:25,271
+I talked about those contacts again, it just really stick out to me at that three o'clock between the inbaying and the hills.
 
 17
-00:01:47,391 --> 00:01:53,155
-What I'm seeing is the shadows almost fill the bottom of the medium-sized craters, but the small craters
+23:52:26,111 --> 23:52:31,312
+And yeah, really just an amazing feature, good illumination for this one.
 
 18
-00:01:54,195 --> 00:01:57,976
-are really popping more than what we've seen a little bit earlier.
-
-19
-00:01:58,616 --> 00:02:04,558
-And it really makes for a unique texture across the illuminated portion.
-
-20
-00:02:06,558 --> 00:02:10,839
-Hopefully got that mosaic for you and gonna bounce on the next target.
-
-21
-00:02:10,859 --> 00:02:14,680
-I think I'm a little bit behind my timeline and call this mosaic good.
+23:52:31,492 --> 23:52:36,633
+And those swirls are pretty prominent as I talked about in that mid to light tone gray.
 
 ### Transcript 004
 
 1
-00:00:03,911 --> 00:00:06,953
-Okay, next up is Leibnitz Target.
+00:05:01,550 --> 00:05:02,691
+Hello, perfect.
 
 2
-00:00:07,073 --> 00:00:08,014
-Kelsey's got the camera.
+00:05:03,591 --> 00:05:07,374
+This is Marie making a recording of Crookes Crater.
 
 3
-00:00:08,434 --> 00:00:14,297
-I'm now in the port starboard window making observations, trying to get oriented.
+00:05:08,995 --> 00:05:15,580
+And so I am looking at the crater with my eyes just out the window.
 
 4
-00:00:14,958 --> 00:00:17,279
-The target name is Leibnitz Crater.
+00:05:15,600 --> 00:05:20,183
+I can see that it is partway between Jackson Crater and Apollo Basin.
 
 5
-00:00:18,400 --> 00:00:19,381
-Trying to get oriented.
+00:05:21,224 --> 00:05:27,388
+The Crookes Crater, you can see that it has an injected blanket and a couple of rays that come out.
 
 6
-00:00:19,461 --> 00:00:28,326
-It's a little bit skewed to us now, so doing some magic here with the tablet to get oriented.
+00:05:28,062 --> 00:05:33,884
+Um, and so that ejecta blanket is very white compared to the surrounding as it's very bright.
 
 7
-00:00:30,802 --> 00:00:35,427
-oblique to us and got a pretty good view at it.
+00:05:34,604 --> 00:05:46,268
+Um, and almost looks, um, see, it is a, it is very similar in size.
 
 8
-00:00:35,567 --> 00:00:40,071
-And I think the target is to try to get a good zoom on this one, Kelsey.
+00:05:46,308 --> 00:05:51,730
+It almost looks like the majority of the race system could fit inside, um, Apollo basin.
 
 9
-00:00:40,632 --> 00:00:42,613
-It's a really circular crater.
+00:05:52,551 --> 00:05:56,172
+Um, and so that ejecta blanket is about that size.
 
 10
-00:00:42,633 --> 00:00:50,181
-If I'm looking at the right one with Leibnitz, it's got a rubbly texture that surrounds the interior of the crater.
+00:05:57,157 --> 00:05:58,018
+It's very bright.
 
 11
-00:00:50,741 --> 00:00:53,762
-It's got really two unique craters inside of it.
+00:05:58,098 --> 00:05:59,379
+It's very white.
 
 12
-00:00:54,223 --> 00:01:10,970
-One is, I can see the depression given this illumination, the other one looks like it's infilled a little bit, looks like two eyes if I turn my head the right way, and then the the face of the crater or the nose of the crater would, there is a some distinctive color change
+00:05:59,439 --> 00:06:05,203
+I can't really see any shadows here based on our geometry because I'm essentially looking straight down on it.
 
 13
-00:01:11,728 --> 00:01:18,953
-I think this may be something that I was cuing my eyes into earlier with these lunar swirls and a little bit of color change.
+00:06:07,764 --> 00:06:15,810
+I can't really see much structure to it, but you do see that white circle interior of the crater.
 
 14
-00:01:19,013 --> 00:01:22,515
-It's definitely brighter in that area.
+00:06:15,830 --> 00:06:21,534
+It does stand out as brighter from the ejecta blanket.
 
 15
-00:01:23,616 --> 00:01:26,717
-Again, struggling with the orientation, but I believe
+00:06:23,517 --> 00:06:35,586
+Um, it does look like it is the, um, it almost looks like a ejecta, an ejecta ray from Jackson actually goes over it.
 
 16
-00:01:29,139 --> 00:01:35,163
-I believe Oppenheimer and Apollo Basin were just to the north of this now or just upwards of this.
+00:06:36,266 --> 00:06:40,649
+Um, and it looks very much like a, um, it just passes right through.
 
 17
-00:01:35,183 --> 00:01:38,685
-I don't know if I've got my orientation right, but I could be a little screwed up on this one.
+00:06:40,710 --> 00:06:46,414
+So I think that it is underneath one of those rays that is coming down from Jackson crater.
 
 18
-00:01:38,705 --> 00:01:43,228
-Hopefully the camera will capture its orientation with the surrounding craters.
+00:06:46,434 --> 00:06:46,474
+Um,
 
 19
-00:01:45,048 --> 00:01:58,715
-Shadows are coming from the bottom up now and making the six o'clock of our view right now very distinctive, that rubbly texture I described at the more southern or the six o'clock position of the crater.
-
-20
-00:01:59,678 --> 00:02:12,668
-and the 12 o'clock position of the crater from our orientation definitely has a disturbed rim as a medium-sized crater has definitely disturbed that rim and made some unique features in there.
-
-21
-00:02:13,909 --> 00:02:23,217
-Slopes look pretty crazy in that rubbly area and the textures are just pretty flat across the middle of that crater, just
-
-22
-00:02:23,737 --> 00:02:30,658
-wanted to definitely highlight and hopefully the camera captures that unique colorization that we're seeing in some of that possible lunar swirls.
-
-23
-00:02:31,459 --> 00:02:35,520
-Um, it's a tonal difference, definitely makes it stand out.
-
-24
-00:02:36,080 --> 00:02:40,080
-Um, and the, the swirl part is a little bit lighter toned.
-
-25
-00:02:40,100 --> 00:02:50,183
-Uh, I would say medium gray leading up to that a little bit brighter white to tan, um, lunar swirl area in the center of the crater as described.
-
-26
-00:02:50,643 --> 00:02:50,923
-Okay.
-
-27
-00:02:51,103 --> 00:02:51,843
-Onto the next target.
+00:06:48,928 --> 00:06:59,399
+It's really neat to see all these bright spots with all these rays right now in this lighting and really excited to move on to our next target.
 
 ### Transcript 005
 
 1
-00:00:01,424 --> 00:00:07,775
-Alright, I'm getting set up in the forward port window and Kelsey's got the camera in the starboard window.
+00:00:03,446 --> 00:00:06,228
+This is Marie making observations with the camera.
 
 2
-00:00:08,677 --> 00:00:12,544
-Next up on our target list looks to be the Apollo Basin.
+00:00:07,008 --> 00:00:08,869
+I'm trying to find Bose Ballot.
 
 3
-00:00:13,797 --> 00:00:24,384
-Got a good close view of that in our current orientation, mostly by eyes, but I did take a quick look at it through the camera at the highest zoom.
+00:00:09,510 --> 00:00:10,651
+Bose Ballot.
 
 4
-00:00:25,065 --> 00:00:29,868
-Our orientation is slightly oblique, but got a pretty good view of it now.
+00:00:11,311 --> 00:00:11,471
+Nope.
 
 5
-00:00:31,029 --> 00:00:33,891
-Just want to say a few things about the size.
+00:00:11,571 --> 00:00:12,272
+Bose and Bhabha.
 
 6
-00:00:34,591 --> 00:00:42,397
-It's really filling the field of view of the camera at full zoom when I took that quick peek, and hopefully Kelsey's capturing that now.
+00:00:12,772 --> 00:00:13,572
+Crater right now.
 
 7
-00:00:43,297 --> 00:00:58,624
-It's hard to make out the boundaries in this illumination I definitely can make out the boundary where the contact is to that larger crater from Apollo To its left side.
+00:00:14,793 --> 00:00:15,253
+Craters.
 
 8
-00:00:58,644 --> 00:01:04,307
-Let me look real quick and see what crater that is Hang on one second.
+00:00:15,914 --> 00:00:24,119
+I know that they're below Apollo Basin, but it's actually, at this lighting, it's really hard to pull them out because of the morphology is making it
 
 9
-00:01:04,967 --> 00:01:05,947
-Oh, it's Oppenheimer.
+00:00:24,695 --> 00:00:29,137
+more difficult to find exactly where the craters are.
 
 10
-00:01:05,987 --> 00:01:07,088
-So yeah, just to
+00:00:29,717 --> 00:00:46,326
+And so what I'm doing instead is I'm just going to take a bunch of pictures of this bottom rim below Apollo Basin at the highest resolution that I can and try hopefully that you'll be able to see.
 
 11
-00:01:08,269 --> 00:01:20,687
-what I'll say the left of Apollo is Oppenheimer in our current orientation and so it can definitely make out some very distinctive structure there between the two.
+00:00:48,327 --> 00:00:50,147
+So I'm sure that I will have captured it.
 
 12
-00:01:21,583 --> 00:01:28,647
-What I did want to point out here is the pronounced rust color that I'm picking up on the mare that's nearest to Oppenheimer.
+00:00:52,582 --> 00:00:54,282
+might not be in the middle of the frame.
 
 13
-00:01:29,208 --> 00:01:40,975
-So the mare I'm talking about is, there's like a mare in the center of Apollo Basin, and then there's a smaller little patch closer to that Oppenheimer crater.
-
-14
-00:01:40,995 --> 00:01:46,238
-And I'm picking up a really distinctive rust color, especially in this illumination condition.
-
-15
-00:01:48,100 --> 00:01:50,221
-The mare in the center of
-
-16
-00:01:52,035 --> 00:01:55,418
-of Apollo Basin doesn't look to have that rust color.
-
-17
-00:01:55,658 --> 00:02:00,062
-It looks darker to me, a little bit on the, you know, blacker side.
-
-18
-00:02:00,662 --> 00:02:14,313
-And then the mare to the south, so if Oppenheimer is at nine o'clock, so at six o'clock of Apollo Basin, the mare to the south may also have that slight rust color that I'm picking up.
-
-19
-00:02:14,353 --> 00:02:15,254
-But definitely the
-
-20
-00:02:15,634 --> 00:02:28,285
-The mare at the nine o'clock closest to Oppenheimer's got this really interesting rust color that I haven't seen that, certainly not in our other observations.
-
-21
-00:02:29,666 --> 00:02:32,208
-Overall, just checking my cue card here.
-
-22
-00:02:32,329 --> 00:02:35,311
-Oh, the shadows, yeah, just not too much shadows.
-
-23
-00:02:35,371 --> 00:02:42,818
-As I said, this illumination condition's not picking out a lot of shadows, but I do really see some distinctive structure between Apollo
-
-24
-00:02:43,718 --> 00:02:44,518
-Oppenheimer.
-
-25
-00:02:44,719 --> 00:02:55,883
-That's kind of what's sticking out to me most as far as the structure and also that range just to the left side or the nine o'clock of the center of Apollo Basin.
-
-26
-00:02:56,443 --> 00:03:06,907
-There's a mountain range, I'll call it, that runs kind of north-south or from between 12 o'clock and 6 o'clock just to the left of that central mare.
-
-27
-00:03:07,067 --> 00:03:12,429
-That's also really sticking out to me and hopefully Kelsey's capturing that in some of the photos.
-
-28
-00:03:13,895 --> 00:03:16,432
-Yeah, that's all I want to say on Apollo.
-
-29
-00:03:16,552 --> 00:03:19,813
-I'm going to go check on the target list for the next one.
-
-30
-00:03:20,176 --> 00:03:20,377
-Thanks.
+00:00:57,883 --> 00:01:17,208
+Yeah, without that defining morphology, it's actually pretty difficult to see, but I can still see a lot of that rusty brown color down here, and so the rims of the craters aren't as well pronounced, and so it's definitely a more difficult one to find, but hopefully the pictures help.
 
 ### Transcript 006
 
 1
-00:00:01,302 --> 00:00:02,804
-Okay, what do we got here?
+00:30:01,427 --> 00:30:03,009
+All right, looking forward to this.
 
 2
-00:00:02,864 --> 00:00:03,385
-What's next?
+00:30:03,309 --> 00:30:10,876
+I've got I think one more target here before Earthset and I can see Earth coming up on the on the side of the moon here.
 
 3
-00:00:03,425 --> 00:00:05,808
-What's next Buys-Ballot?
+00:30:11,296 --> 00:30:12,257
+But before we get there.
 
 4
-00:00:05,868 --> 00:00:07,930
-Oh I'm not sure.
+00:30:13,072 --> 00:30:22,095
+Really want to take the opportunity to describe this beautiful whole moon view I'm getting Wow, okay, where to even start?
 
 5
-00:00:07,950 --> 00:00:08,711
-I remember this too.
+00:30:22,715 --> 00:30:31,178
+We've got quite a variation of Albedo as the earth is approaching the sort of the limb of the moon and
 
 6
-00:00:08,731 --> 00:00:12,496
-Well, you're gonna need to give me some direction Yeah, I'm gonna need to give myself some direction.
+00:30:32,458 --> 00:30:35,721
+Wow, it looks, you know, much brighter white.
 
 7
-00:00:12,616 --> 00:00:14,718
-All right, let's pull up the lunar geography review.
+00:30:35,781 --> 00:30:42,966
+You see, you know, crater array systems from several craters extending across the surface, and they really pop in this illumination profile.
 
 8
-00:00:14,738 --> 00:00:17,241
-I know we're on the far side Clicking in there
+00:30:44,187 --> 00:30:57,816
+You know, to the south, I got a great view here of the South Pole-Aitken Basin, starting to see that, you know, darker, grayer material in that beautiful SPA really pop out, and inside of it is
 
 9
-00:00:18,451 --> 00:00:20,472
-Oh gosh, it's not even on this medium label.
+00:30:59,798 --> 00:31:10,245
+a series of other craters, some of which have dark smooth interiors and some of which have even darker patches that look like some of the mare patches.
 
 10
-00:00:20,732 --> 00:00:21,132
-It's right.
+00:31:10,846 --> 00:31:25,896
+There's one crater there that actually has patches of mare, several discrete patches of mare, whereas a few of the other craters within SPA have maybe more traditional, looks like mare infill there.
 
 11
-00:00:21,212 --> 00:00:21,552
-Yeah.
+00:31:29,337 --> 00:31:32,419
+I'll tell you, it really is a beautiful view here.
 
 12
-00:00:21,672 --> 00:00:21,932
-Okay.
+00:31:34,361 --> 00:31:43,608
+I'm starting to see, I think, Muscovians, which I know is a really exciting science target.
 
 13
-00:00:23,573 --> 00:00:23,913
-Oh, wow.
+00:31:44,429 --> 00:31:49,633
+Jackson Crater pops in the middle where you see a sharp crater rim for Jackson.
 
 14
-00:00:24,053 --> 00:00:24,313
-Okay.
+00:31:50,094 --> 00:31:52,135
+And the rays almost look like a star.
 
 15
-00:00:24,774 --> 00:00:25,834
-That's a small sucker.
+00:31:52,215 --> 00:31:54,657
+I see kind of like five rays coming out.
 
 16
-00:00:26,734 --> 00:00:26,934
-Okay.
+00:31:55,718 --> 00:31:57,159
+The ray to the north.
 
 17
-00:00:26,954 --> 00:00:30,136
-It should be like halfway between Jackson and Moscoviense.
+00:31:59,040 --> 00:32:09,303
+Is fainter- the other four rays- really are coming out- kind of like in an even spread and even spacing radially out from the center of.
 
 18
-00:00:30,276 --> 00:00:32,136
-So let's see here.
+00:32:10,084 --> 00:32:11,724
+Of Jackson crater there-
 
 19
-00:00:32,497 --> 00:00:34,337
-Let me go back to the targeting plan.
+00:32:15,643 --> 00:32:31,202
+Wow yeah I mean of course toward the Terminator we're starting to see some more distinct shadowing there and again like that morphology really pops on the west side whereas on the east side I'm able to pick up that really bright albedo color.
 
 20
-00:00:35,158 --> 00:00:35,978
-Let me see what we got.
+00:32:34,000 --> 00:32:43,673
+And it's just really a spectacular view of these different albedo provinces that I see moving from east to west.
 
 21
-00:00:36,118 --> 00:00:36,458
-Okay.
+00:32:44,354 --> 00:32:50,182
+I'm starting to see Earth get a lot closer to the limb of the moon here, so I know I've got to transition to Earthset.
 
 22
-00:00:36,838 --> 00:00:38,499
-This is tough.
+00:32:51,343 --> 00:32:55,945
+Wowee, this is a great view and really fortunate to be able to see it here.
 
 23
-00:00:39,499 --> 00:00:40,640
-What am I even looking at here?
+00:32:56,745 --> 00:32:59,406
+Last thing I'll say is I think I missed the textures.
 
 24
-00:00:42,960 --> 00:00:43,240
-Where?
+00:32:59,986 --> 00:33:12,710
+On the east side, the texture really is starting to get pretty, you know, of course washed out due to the illumination conditions there, so it looks pretty smooth to my eye, but wow does that texture start to pop as you're looking at the Terminator.
 
 25
-00:00:43,461 --> 00:00:44,201
-I got my camera ready.
-
-26
-00:00:44,242 --> 00:00:47,025
-Should Moscoviense be off to the west, Angela?
-
-27
-00:00:47,045 --> 00:00:47,986
-I don't know.
-
-28
-00:00:48,046 --> 00:00:50,108
-I can't see Moscoviense anymore.
-
-29
-00:00:50,548 --> 00:00:51,970
-Oh, is there a possibility?
-
-30
-00:00:52,030 --> 00:00:52,751
-Is this upside down?
-
-31
-00:00:53,712 --> 00:00:55,754
-All right, let me flip this upside down here.
-
-32
-00:00:55,794 --> 00:00:56,315
-What do we got?
-
-33
-00:00:57,456 --> 00:00:57,897
-Okay.
-
-34
-00:00:59,437 --> 00:01:02,919
-So the image in the targeting plan was upside down, but now I think I got it.
-
-35
-00:01:02,999 --> 00:01:06,082
-So I think I see Jackson Crater, that really popped.
-
-36
-00:01:06,122 --> 00:01:13,226
-So it looks like Buys-Ballot, yep, they're telling me it should be pretty, pretty close to... How pretty is pretty?
-
-37
-00:01:13,246 --> 00:01:14,727
-That's a good question.
-
-38
-00:01:15,128 --> 00:01:17,189
-Like the size of Jackson?
-
-39
-00:01:17,209 --> 00:01:18,490
-Yeah, yeah.
-
-40
-00:01:18,570 --> 00:01:22,112
-It's maybe like, it's about the size of Jackson and it's maybe about like...
-
-41
-00:01:23,073 --> 00:01:40,734
-i don't even know eight to ten jackson diameters which direction to the i think if i'm looking at this right it's to the west to the west so yeah okay yeah all right so i think i got it here that took a while sorry about that shape stuff because i'm looking at a lot of graders that might be around that size
-
-42
-00:01:42,036 --> 00:01:44,518
-Yeah, the shape, wow, look at this.
-
-43
-00:01:44,598 --> 00:01:48,922
-This is, this almost looks like, I don't know, like an arrowhead or something.
-
-44
-00:01:49,002 --> 00:01:50,804
-Like it's, it's... Oh, I got it.
-
-45
-00:01:50,884 --> 00:01:51,544
-Okay, yeah, yeah, yeah.
-
-46
-00:01:51,745 --> 00:01:52,725
-I'll take some pictures now.
-
-47
-00:01:52,966 --> 00:02:01,213
-Yeah, it's like an arrowhead feature and there's actually like a higher topographic ridge that runs through the middle of Buys-Ballot.
-
-48
-00:02:01,233 --> 00:02:01,973
-So let me see here.
-
-49
-00:02:03,048 --> 00:02:24,758
-yeah and it's it's kind of sitting on or under i can't quite tell from here no it's got to be sitting on a crater that's just sort of at the fat arrowhead end yeah and it's that that one it's sitting on looks like it's got more muted topography i'm thinking and the tip of the arrow is kind of pointing at like uh oh i guess it's telling me on the ltp it's the Lacus Luxuriae Region
-
-50
-00:02:24,938 --> 00:02:25,398
-Oh, I see.
-
-51
-00:02:25,418 --> 00:02:26,839
-It looks like kind of like a spillout.
-
-52
-00:02:26,899 --> 00:02:27,459
-Yeah.
-
-53
-00:02:27,599 --> 00:02:30,540
-It's a dark kind of like grayish blue looking.
-
-54
-00:02:30,620 --> 00:02:31,021
-Yeah.
-
-55
-00:02:31,141 --> 00:02:31,421
-Okay.
-
-56
-00:02:31,541 --> 00:02:32,981
-I'll take some pictures of that.
-
-57
-00:02:33,041 --> 00:02:43,666
-Slightly the area outside of Buys-Ballot is kind of like darker and albedo and then Boy's Ballad does look kind of crisp next to the surrounding features I'm thinking.
-
-58
-00:02:43,686 --> 00:02:48,328
-Does it look like it's spilling out because it kind of looks like it's coming from maybe that arrow point to me?
-
-59
-00:02:48,588 --> 00:02:49,008
-Maybe.
-
-60
-00:02:49,068 --> 00:02:50,309
-It's kind of hard to tell and I guess
-
-61
-00:02:51,507 --> 00:02:56,370
-Yeah, I mean, maybe one edge of Buys-Ballot looks more muted in topography than the other edge.
-
-62
-00:02:56,390 --> 00:02:57,711
-Do you see what I'm saying here?
-
-63
-00:02:57,751 --> 00:02:58,171
-Oh, yeah.
-
-64
-00:02:58,271 --> 00:03:01,113
-I mean, it might be the shadows, but yeah, I see what you mean by that.
-
-65
-00:03:01,774 --> 00:03:03,335
-Alright, I'll be honest.
-
-66
-00:03:03,395 --> 00:03:04,615
-I'm not too sure what's going on here.
-
-67
-00:03:04,695 --> 00:03:09,018
-I know that there can be some weird-looking craters, but this one is an oddball.
-
-68
-00:03:09,739 --> 00:03:14,682
-I think all we can really do here, Angela, is get some pictures of it and hope that the science team back on Earth can figure this out for us.
-
-69
-00:03:15,122 --> 00:03:24,535
-Yep, I'll make sure that my focus of my camera is all over that area so you can maybe do some cool stuff with the photos, but I got the pictures.
-
-70
-00:03:24,676 --> 00:03:26,058
-Alright, moving on.
+00:33:14,247 --> 00:33:22,374
+It's a beautiful view here, and as we're getting ready to see Earthset, I just want to say, you know, thanks and see you on the other side.
 
 ### Transcript 007
 
 1
-00:00:00,978 --> 00:00:21,183
-all righty i heard that we're gonna start to see the moon so buckle up i got my cam ready oh wow oh i'm starting to see this liver this liver of the it looks like a wow what do you got yeah it's earth peeking from behind the moon and it is
+00:40:01,903 --> 00:40:03,705
+Alright, moving on to target number 15.
 
 2
-00:00:22,314 --> 00:00:23,235
-Beautiful!
+00:40:03,746 --> 00:40:04,827
+We're going to Jackson.
 
 3
-00:00:23,615 --> 00:00:23,955
-Hey!
+00:40:04,947 --> 00:40:07,290
+So I'm looking at Jackson now.
 
 4
-00:00:24,075 --> 00:00:24,635
-Trevor!
+00:40:07,771 --> 00:40:16,262
+I've certainly been able to locate it given some of the surrounding landmarks to focus in on it.
 
 5
-00:00:24,795 --> 00:00:25,316
-Kelsey!
+00:40:17,083 --> 00:40:19,506
+If I do look down at my LTP, I tend to
 
 6
-00:00:26,076 --> 00:00:28,017
-Whatever you're doing, get over here!
+00:40:20,232 --> 00:40:25,337
+lose exactly where it's at, so it takes some relocating every time I look back out.
 
 7
-00:00:28,157 --> 00:00:29,438
-This is what we've been waiting for!
+00:40:25,397 --> 00:40:34,565
+So I'm gonna concentrate on just describing Jackson and then I'll take a look and make sure I didn't miss anything in the actions or the cue card.
 
 8
-00:00:29,458 --> 00:00:30,999
-And look out the window!
+00:40:35,706 --> 00:40:41,492
+So just looking at Jackson for its shape and size, super circular,
 
 9
-00:00:31,159 --> 00:00:35,201
-It's, it's everything right... there.
+00:40:42,258 --> 00:40:42,778
+crater.
 
 10
-00:00:36,662 --> 00:00:37,382
-Wow.
+00:40:43,279 --> 00:41:03,312
+I do pick up in this illumination condition some of the central peak that looks at the bottom of Jackson and get a lot of the terracing, particularly to the nine o'clock position in our current orientation of the window with 12 o'clock being up the lunar north.
 
 11
-00:00:37,502 --> 00:00:38,463
-A beauty!
+00:41:05,494 --> 00:41:07,535
+Now also mention that
 
 12
-00:00:39,083 --> 00:00:40,684
-That's, that's something special.
+00:41:08,050 --> 00:41:11,352
+I see some distinct rays from Jackson.
 
 13
-00:00:40,704 --> 00:00:43,245
-That's, that's pretty breathtaking.
+00:41:11,372 --> 00:41:14,153
+I think that was one of the actions out of the LTP.
 
 14
-00:00:43,305 --> 00:00:44,826
-I'm just gonna, I'm gonna take a moment.
+00:41:14,173 --> 00:41:27,781
+I see distinct rays at the four o'clock and the 10 o'clock that extend about five to six Jackson diameters away from Jackson itself.
 
 15
-00:00:47,087 --> 00:00:47,627
-Yeah, wow.
+00:41:28,852 --> 00:41:44,162
+And those kind of peter out or I lose that distinct ray colorization when it impacts or when it gets into some other impacts that are further extent, but also have some, some rays associated with them.
 
 16
-00:00:47,667 --> 00:00:48,648
-Take a look at that.
+00:41:44,302 --> 00:41:51,947
+But Jackson for sure is, has some distinct rays as my eyes have become adapted to the lighting environment.
 
 17
-00:00:50,158 --> 00:00:50,799
-Alright, I'm doing it.
+00:41:53,576 --> 00:41:57,477
+There also maybe is a subtle ray that goes down to the seven o'clock.
 
 18
-00:00:50,819 --> 00:00:52,080
-I'm blocking it out with my thumb.
+00:41:58,018 --> 00:42:05,980
+It's less prominent, but definitely see some of those light tone rays coming from Jackson.
 
 19
-00:00:56,085 --> 00:00:57,026
-It's an honor, guys.
+00:42:06,360 --> 00:42:13,422
+Now they're light tone, but they're not in this illumination condition any lighter than the bottom of Jackson.
 
 20
-00:00:57,106 --> 00:01:04,855
-There's really no one I'd rather be here right now in this moment than with you guys.
+00:42:13,482 --> 00:42:20,645
+So if I was to describe the three color tones that I just outlined there, the lightest is the
 
 21
-00:01:05,396 --> 00:01:05,976
-Back at ya.
+00:42:21,505 --> 00:42:30,297
+the bottom of Jackson and then the light rays are the next color tone and then there's kind of the gray background that is the surrounding terrain.
 
 22
-00:01:07,872 --> 00:01:09,394
-Trevor, stop what you're doing over there.
+00:42:31,298 --> 00:42:38,247
+And so I just wanted to enumerate that tonal difference in three distinct broad categories.
 
 23
-00:01:09,414 --> 00:01:10,095
-Stop being productive.
+00:42:39,965 --> 00:42:42,866
+Um, let me take a look at the LTP again here real quick.
 
 24
-00:01:10,135 --> 00:01:11,537
-Come on over and take a look at this.
+00:42:42,906 --> 00:42:49,949
+So that covers the color, some of those albedos, um, and that tonal difference that I was talking about and texture.
 
 25
-00:01:12,558 --> 00:01:13,760
-All right, all right.
+00:42:49,969 --> 00:42:57,691
+Yeah, the biggest texture thing that sticks out with Jackson to me, um, is the terracing and that central peak.
 
 26
-00:01:13,800 --> 00:01:15,282
-Okay, I'll start to describe.
+00:42:58,171 --> 00:43:05,614
+Um, don't see any specific texture in those rays I described, but the terracing is pretty, um,
 
 27
-00:01:16,323 --> 00:01:23,953
-Yeah, I'm seeing the, oh, it's just, it's hard to do the science, but I'm looking at something so special.
+00:43:06,270 --> 00:43:11,873
+dramatic, even though it's a small crater, it stands out because of that terracing.
 
 28
-00:01:24,434 --> 00:01:25,635
-Yeah, I'm seeing the blues.
+00:43:13,834 --> 00:43:16,795
+And I think that covers it for the LTP.
 
 29
-00:01:26,897 --> 00:01:28,399
-Dark and light blues.
+00:43:16,835 --> 00:43:18,336
+Let me take one last look.
 
 30
-00:01:29,099 --> 00:01:30,561
-The white's really standing out.
+00:43:19,257 --> 00:43:32,283
+Yeah, the relationship with the rays across the surface are, as I described, pretty prominent within two or three crater diameters of Jackson and then start to fall off as you get to those five or six crater diameters away.
 
 31
-00:01:30,581 --> 00:01:32,524
-Hi, Antarctica!
+00:43:33,644 --> 00:43:34,424
+That's it with Jackson.
 
 32
-00:01:32,864 --> 00:01:35,607
-Earth's South Pole looks pretty great from over here.
-
-33
-00:01:36,308 --> 00:01:38,851
-Oh, I can see you guys, Houston.
-
-34
-00:01:40,293 --> 00:01:41,955
-See those swirls of clouds.
-
-35
-00:01:42,295 --> 00:01:43,236
-South America.
-
-36
-00:01:46,325 --> 00:01:47,205
-Oh, don't worry, Earth.
-
-37
-00:01:47,966 --> 00:01:51,867
-I'm getting pictures of all your good angles.
-
-38
-00:01:52,467 --> 00:01:54,068
-You're looking great from here, Houston.
-
-39
-00:01:54,728 --> 00:01:55,488
-Oh, all right.
-
-40
-00:01:55,588 --> 00:01:58,069
-And now I take a full Earth.
-
-41
-00:01:58,469 --> 00:01:59,489
-So mark this time.
-
-42
-00:01:59,529 --> 00:02:00,110
-That's when the...
-
-43
-00:02:01,766 --> 00:02:02,707
-I can see it all.
-
-44
-00:02:03,287 --> 00:02:07,429
-There's no more shadow of the moon on the Earth.
-
-45
-00:02:07,449 --> 00:02:09,671
-So that's pretty crazy.
-
-46
-00:02:09,971 --> 00:02:12,112
-Space has never looked so black from over here.
-
-47
-00:02:12,132 --> 00:02:20,057
-So yes, Earth is coming right above or north of the equator or the equatorial line.
-
-48
-00:02:20,497 --> 00:02:23,559
-So like if north is 12 o'clock, we're looking at like 930.
-
-49
-00:02:24,639 --> 00:02:27,321
-Man, the Earth looks so smooth.
-
-50
-00:02:28,514 --> 00:02:29,895
-It looks peaceful from here, doesn't it?
-
-51
-00:02:29,915 --> 00:02:31,015
-It really does.
-
-52
-00:02:31,555 --> 00:02:36,657
-And the far side of the moon looks pretty rough compared to just how smooth and beautiful the Earth is.
-
-53
-00:02:37,237 --> 00:02:43,660
-I'm feeling like the luckiest person, not on Earth, luckiest person around the moon right now.
-
-54
-00:02:44,920 --> 00:02:46,821
-Yeah, I can see it all, Houston.
-
-55
-00:02:46,861 --> 00:02:48,221
-I'm starting to feel a little homesick.
-
-56
-00:02:49,322 --> 00:02:51,983
-But yeah, I'm looking through my camera lens.
-
-57
-00:02:52,985 --> 00:02:55,249
-See a little bit more detail for you guys.
-
-58
-00:02:55,970 --> 00:02:58,393
-I can see the greens and the browns.
-
-59
-00:03:00,016 --> 00:03:01,398
-See Amazon rainforests.
-
-60
-00:03:01,738 --> 00:03:02,780
-Maybe those are the Andes.
-
-61
-00:03:02,840 --> 00:03:03,841
-Maybe those are the Andes.
-
-62
-00:03:05,394 --> 00:03:06,315
-Absolutely gorgeous.
-
-63
-00:03:06,996 --> 00:03:08,337
-Angela's got some good pictures here.
-
-64
-00:03:08,698 --> 00:03:09,899
-Hey, mark this up.
-
-65
-00:03:09,939 --> 00:03:12,902
-This is definitely the first one that we're going to have to send down back to Earth.
-
-66
-00:03:12,922 --> 00:03:16,386
-People are going to want to see these pictures as soon as we can.
-
-67
-00:03:16,446 --> 00:03:18,248
-So prep yourself, Houston.
-
-68
-00:03:18,268 --> 00:03:21,191
-You've got some beautiful shots coming down.
-
-69
-00:03:21,211 --> 00:03:22,873
-I can't wait to tell you all about it.
-
-70
-00:03:23,334 --> 00:03:24,395
-Oh my god.
-
-71
-00:03:24,455 --> 00:03:25,135
-I could cry.
+00:43:34,464 --> 00:43:35,265
+Moving on to the next one.
 
 ### Transcript 008
 
 1
-00:00:00,691 --> 00:00:03,913
-All right, Houston, I'm coming back to Ingenii.
+00:45:00,999 --> 00:45:04,222
+Christina here, working through my targeting.
 
 2
-00:00:04,033 --> 00:00:11,757
-So I did a pass on Ingenii in a more oblique view, and now I'm coming back at a more nadir view, now that some time has passed.
+00:45:04,863 --> 00:45:08,966
+Next up is number 16, Oppenheimer.
 
 3
-00:00:12,477 --> 00:00:15,198
-And it's super easy to find now, because I know exactly what I'm looking for.
+00:45:08,986 --> 00:45:19,436
+I am looking through the camera at the moment, and so I can get pretty close, zoomed in.
 
 4
-00:00:16,179 --> 00:00:19,760
-So let's give you some descriptions here.
+00:45:20,517 --> 00:45:23,980
+Oppenheimer and Apollo Basin right next to each other.
 
 5
-00:00:19,901 --> 00:00:28,545
-So first thing that pops up, this outer rim that I talked about, that looks like a bigger raised topographic high, that's
+00:45:24,160 --> 00:45:25,822
+I'll say the first thing that stands out to me
 
 6
-00:00:29,305 --> 00:00:41,933
-that was that sea but I didn't know if that sea connected and it does look like it's completely, I'd say roughly encircling Ingenii and then a crater that's around the same size as Ingenii and then a few other smaller craters in that.
+00:45:27,398 --> 00:45:28,258
+are the color tones.
 
 7
-00:00:41,953 --> 00:00:45,295
-So it's definitely within that boundary.
+00:45:30,119 --> 00:45:39,842
+Oppenheimer has kind of this reddish hue to it, with its mare being more like almost like a dark purple.
 
 8
-00:00:46,315 --> 00:01:11,433
-um let's see looking a little bit closer with my camera um yeah these light and dark toned albedo um kind of basin color variations it's definitely uh definitely seeing what you were describing as the lunar swirls here um i will say there's no real pattern that's coming out to me um but i am seeing some great uh variations at this angle that weren't weren't as clear in the oblique view so
+00:45:39,862 --> 00:45:44,844
+And the mares that are really standing out to me are the kind of three
 
 9
-00:01:12,233 --> 00:01:20,096
-I'll make sure to get you guys some pictures and you can you can tell me what you what you see And yeah these there's some craters that are popping out as well.
+00:45:46,663 --> 00:45:51,207
+to the left side of the crater.
 
 10
-00:01:20,236 --> 00:01:29,800
-I wasn't a little sure before but now I'm there's like one crater That's like smack dab in the center of Ingenii and I could see that really really clearly Oh, there's another one.
+00:45:52,489 --> 00:46:11,047
+And then as you go more towards Apollo Basin, the color tone changes pretty significantly because you have this big ray, this light-toned ray that's coming from Crooks that is just almost cutting
 
 11
-00:01:29,820 --> 00:01:31,761
-That's like pretty distinct to that's
+00:46:12,474 --> 00:46:13,254
+Oppenheimer in half.
 
 12
-00:01:32,841 --> 00:01:34,282
-I called Ingenii like the octopus.
+00:46:14,555 --> 00:46:29,341
+It's going kind of close to straight up and down through the crater and proceeds double the length, at least, past the crater as well.
 
 13
-00:01:34,522 --> 00:01:48,869
-It's like in the northern leg of that octopus, where that elongated island is separating out the kind of northern legs and the southern legs, if you're picking up what I'm saying.
+00:46:29,361 --> 00:46:39,205
+And in that ray, there's actually two tones of this kind of lighter hue that's also about equal
 
 14
-00:01:48,889 --> 00:01:59,035
-And there's a, in between, you know, kind of following along that rough boundary circular of Ingenii, I'm seeing another pretty bright crater.
+00:46:41,290 --> 00:47:01,398
+on so i'll say that if you kind of split that ray in half vertically on the left side of it has this more of a maybe we'll call it like a tan like a a tanner browner light toned color and then on the right side of it closer to apollo basin it's definitely more of a
 
 15
-00:01:59,095 --> 00:02:01,136
-And honestly, actually, it looks like there's some
+00:47:03,071 --> 00:47:08,676
+a lighter tan, I'll say, but there's a little bit of tonal difference with the lighter color closer towards Apollo Basin.
 
 16
-00:02:01,756 --> 00:02:08,138
-light toned albedo kind of color that's associated with that as well.
+00:47:09,476 --> 00:47:18,244
+And then as you move more towards Apollo Basin, you have a reddish tone, but it's a little bit lighter than what I'm seeing in Oppenheimer.
 
 17
-00:02:08,178 --> 00:02:16,660
-And it's really associated with the, I guess it's the eastern kind of fan of that crater.
+00:47:19,205 --> 00:47:26,312
+And then the Mare also, instead of like the dark purples, if you call it like a little bit of darker purple in the Mare,
 
 18
-00:02:16,980 --> 00:02:20,441
-So there's a little bit of association with that crater there.
+00:47:28,355 --> 00:47:32,518
+In Oppenheimer, in Apollo, it's more of like a bluer in the mare.
 
 19
-00:02:20,661 --> 00:02:22,421
-So I'll make sure to get some good pics of that.
+00:47:36,661 --> 00:47:38,182
+And then go into texture.
 
 20
-00:02:23,441 --> 00:02:27,482
-Yeah, I noted a kind of wrinkle that I saw and I'm seeing that too.
+00:47:38,202 --> 00:47:47,388
+Let's see, Oppenheimer is a little bit, maybe I'd call it rougher than Apollo overall.
 
 21
-00:02:27,502 --> 00:02:28,623
-There's actually another one.
+00:47:57,561 --> 00:48:04,887
+And I'm definitely seeing these kind of finer structures that are at the base, at the kind of basin of Oppenheimer.
 
 22
-00:02:30,690 --> 00:02:49,579
-that i'm seeing as well that's kind of close to the terminator but like more on the southern end of of engine eye but around the same strike um as that more prominent one um that's on the western side so that's pretty uh that's a little bit more noticeable now um there's also seems to maybe be like some uh
+00:48:04,907 --> 00:48:13,653
+And I can even see them in my LTP, but yeah, they're not present in Apollo either.
 
 23
-00:02:50,731 --> 00:03:05,126
-Some like lineations maybe, some alignments of maybe craters or like maybe it's a little bit hard to say, but maybe they're like these lighter tone kind of lines and those lines are going maybe like, hold on, let me think about what direction these are going.
+00:48:14,334 --> 00:48:22,320
+So I just see these kind of linear fractures and structures in Oppenheimer at the, at its basin.
 
 24
-00:03:07,289 --> 00:03:09,611
-Kind of west striking kind of roughly.
+00:48:31,271 --> 00:48:40,078
+Overall though, these kind of the margins of the mare, I would say, are more diffuse in Oppenheimer than Apollo.
 
 25
-00:03:10,572 --> 00:03:21,537
-Man, kind of hard to say here, but it's almost, it's roughly perpendicular or like 45 degrees in perpendicular from that wrinkle ridge that I was, that wrinkle I was talking about.
+00:48:41,439 --> 00:48:47,903
+Like there are some margins, like I said, those three kind of primary mare are what stands out.
 
 26
-00:03:22,097 --> 00:03:25,879
-And that looks like it's crossing like the entirety of Ingenii.
+00:48:49,044 --> 00:48:50,405
+And what I mean by that,
 
 27
-00:03:27,420 --> 00:03:34,923
-So, and I, other than that though, there's not like a ton of pattern that I'm seeing in the mare, but super cool views.
+00:48:53,462 --> 00:49:03,470
+are there's the very circular, so if you're talking about Oppenheimer on the kind of left side of it, there's a really circular mare which has like two
 
 28
-00:03:34,963 --> 00:03:38,365
-And don't worry, science, I'm going to get you all kinds of pictures.
+00:49:05,220 --> 00:49:07,361
+it kind of horizontal notches to it.
+
+29
+00:49:08,201 --> 00:49:12,942
+And then below that, a little to the left, you have a little bit of a smaller splotch.
+
+30
+00:49:13,102 --> 00:49:18,483
+And then a little bit below that, a little bit more to the right, there's kind of a dark, diffuse mare patch.
+
+31
+00:49:18,883 --> 00:49:30,246
+Whereas Apollo, it's very clear that there are, instead of, like I said, the margins are more diffuse in Oppenheimer than they are in Apollo.
+
+32
+00:49:30,266 --> 00:49:33,807
+The Apollo mare is very clear,
+
+33
+00:49:35,288 --> 00:49:43,998
+lineation and differentiation between the light and the dark of the mare and the light-toned surrounding area.
 
 ### Transcript 009
 
 1
-00:00:03,912 --> 00:00:06,655
-Alright, okay, I gotta take a moment to collect myself here.
+00:50:01,128 --> 00:50:01,808
+Christina here.
 
 2
-00:00:07,496 --> 00:00:08,237
-Next target.
+00:50:02,268 --> 00:50:06,789
+Moving on to my next target, which is Apollo Basin, target number 17.
 
 3
-00:00:08,537 --> 00:00:09,118
-What do we have?
+00:50:09,010 --> 00:50:19,692
+I did a lot of descriptions on Apollo Basin when I compared it to Oppenheimer for target 16, but I'm going to continue on focusing on Apollo Basin.
 
 4
-00:00:09,618 --> 00:00:12,561
-Okay, looking for a description of Terminator morphology, I think?
+00:50:20,513 --> 00:50:23,953
+So the first thing I'll note is the color tones.
 
 5
-00:00:12,601 --> 00:00:13,442
-Let me get oriented.
+00:50:25,494 --> 00:50:30,515
+And there doesn't seem to be a significant color tone difference in
 
 6
-00:00:13,742 --> 00:00:14,023
-Whoa!
+00:50:32,483 --> 00:50:51,782
+The kind of inner ring of the basin and the exterior ring of the basin They seem to be around the same color tone, which is in the mare this dark blue Very dark kind of black blue color and then everything else which has a slight kind of reddish gray
 
 7
-00:00:14,563 --> 00:00:16,045
-Whoa!
+00:50:52,218 --> 00:50:53,179
+tone to it.
 
 8
-00:00:16,065 --> 00:00:16,726
-Angela, you guys!
+00:50:54,139 --> 00:51:11,589
+With the exception of maybe like three pretty bright craters that stand out, the one that stands out the most is kind of the northeast of the mare that's inside of the inner basin.
 
 9
-00:00:16,886 --> 00:00:17,707
-You're not gonna believe this!
+00:51:13,150 --> 00:51:25,224
+and it stands out because it has rays that are maybe like four rays that are clearly cutting across that mare, that irregular shaped mare, and it seems like those rays are
 
 10
-00:00:17,747 --> 00:00:18,047
-What?
+00:51:28,209 --> 00:51:33,673
+you know, they're very clear because they have a contrast in the dark mares because they're such light tone.
 
 11
-00:00:18,067 --> 00:00:20,490
-I really think I just saw a flash here!
+00:51:34,093 --> 00:51:38,116
+And then they continue on, but the end of it is a little bit diffuse.
 
 12
-00:00:20,510 --> 00:00:21,110
-No, you didn't!
+00:51:38,236 --> 00:51:42,740
+I know I can't see those rays on the other side of that inner ring.
 
 13
-00:00:21,170 --> 00:00:24,594
-No, it was a bright white flash, really tiny, but it was there.
+00:51:43,340 --> 00:51:46,262
+So they seem to be constrained in some way to the inner ring.
 
 14
-00:00:24,614 --> 00:00:25,215
-Did you see it, Trevor?
+00:51:46,842 --> 00:51:52,026
+And their direction is kind of north,
 
 15
-00:00:25,655 --> 00:00:26,676
-Yeah, come on over here.
+00:51:55,101 --> 00:51:58,804
+northwest, cutting diagonally down and across.
 
 16
-00:00:26,716 --> 00:00:28,017
-Well, I guess you missed it now, huh?
+00:52:00,265 --> 00:52:13,495
+And then the other two brighter craters that stand out are outside of that inner basin and slightly to the east of the dark mare patch that's
 
 17
-00:00:28,197 --> 00:00:30,158
-I wonder if any of the saw cameras caught that.
+00:52:14,810 --> 00:52:16,231
+on the left side of the basin.
 
 18
-00:00:30,739 --> 00:00:36,763
-It was just like a bright white light over there in the unilluminated portion of the moon, really fleeting, but that was inspiring.
+00:52:16,251 --> 00:52:21,855
+If you're looking at it like a face, it's the left eye of that mare patch.
 
 19
-00:00:36,943 --> 00:00:37,503
-Where was it?
+00:52:22,195 --> 00:52:24,376
+It's a little bit to the right of it.
 
 20
-00:00:37,843 --> 00:00:43,167
-Well, so here I am in the port forward window, and I think it was kind of like off in the upper right quadrant of my view here.
+00:52:25,317 --> 00:52:34,842
+And then if you're looking at the smile, right above, north of the smile, that's the other kind of bright crater.
 
 21
-00:00:44,489 --> 00:00:46,070
-Wow, that was incredible.
+00:52:34,902 --> 00:52:36,984
+So there's that kind of three bright craters that stand out.
 
 22
-00:00:46,110 --> 00:00:48,751
-I hope you can pull this out of other vehicle data.
+00:52:37,884 --> 00:52:42,507
+And I've kind of tried to describe them in association with the mare, but hopefully that comes through in the pictures.
 
 23
-00:00:48,911 --> 00:00:49,652
-I mean, wow.
+00:52:50,803 --> 00:53:00,608
+In general, in terms of the texture, Apollo Basin seems a lot smoother, especially in the kind of mare regions.
 
 24
-00:00:49,832 --> 00:00:51,753
-We got to get a seismometer on the moon ASAP.
+00:53:02,248 --> 00:53:14,694
+Definitely seems like they're a little bit more of a flow or a mantled type of smooth look versus Oppenheimer, which has a little bit more ruggedness to it.
 
 25
-00:00:52,513 --> 00:00:56,275
-I'll be honest, I was kind of skeptical we'd see one of these, but we sure got lucky.
+00:53:15,841 --> 00:53:26,926
+And like I mentioned, there's more contrast and sharpness in the boundaries of those dark patches in Apollo Basin than Oppenheimer.
 
 26
-00:00:56,315 --> 00:00:57,055
-What an experience.
+00:53:26,946 --> 00:53:43,773
+And the last thing I'll say is it does seem like Oppenheimer is
 
 27
-00:00:57,115 --> 00:01:02,478
-I think I remember this was really high priority for the lunar science team, so I'm really glad we got this data point for them.
-
-28
-00:01:02,498 --> 00:01:04,059
-All right, mark the time that you've seen it.
-
-29
-00:01:04,159 --> 00:01:04,379
-Yeah.
+00:53:47,391 --> 00:54:01,616
+kind of physically on top of Apollo Basin, like it's cutting into it, it's cutting off a little bit of the margin, and then there's these rays that are cutting straight through from a crater above.
 
 ### Transcript 010
 
 1
-00:01:05,144 --> 00:01:05,444
-Hello!
+01:05:01,235 --> 01:05:05,158
+All right, moving on to target 20, the Poincaré Crater region.
+
+2
+01:05:05,899 --> 01:05:16,647
+I've been staring at this one for a little bit now before I started this recording, and I'm looking for that stratigraphic relationship that's called out for this basin.
+
+3
+01:05:16,667 --> 01:05:30,118
+I totally understand that it's within SPA, or at least in a Western region of SPA, but I'm trying to look for this resurface volcanism
+
+4
+01:05:31,003 --> 01:05:32,864
+And it's just not standing out to me.
+
+5
+01:05:32,924 --> 01:05:34,905
+Maybe it's the illumination condition on this one.
+
+6
+01:05:34,925 --> 01:05:47,933
+Maybe it's because of that being near the Terminator, but I'm not picking up on the things, the actions that are outlined in the LTP.
+
+7
+01:05:49,034 --> 01:05:59,140
+Color's pretty diffuse across this one, not picking up any kind of color differentiation that, at least from my eyes and at this, you know, without a,
+
+8
+01:06:00,458 --> 01:06:03,079
+optical device to get any closer in on it.
+
+9
+01:06:04,019 --> 01:06:06,340
+Wrinkle ridges, not seeing any.
+
+10
+01:06:07,280 --> 01:06:13,042
+The basin rings, I can't see that it's a basin, but I kind of have to squint to see that in that area.
+
+11
+01:06:14,062 --> 01:06:19,884
+And the mari relationships, just because it's all tonal, about the same down there in this illumination conditions.
+
+12
+01:06:21,765 --> 01:06:22,385
+Not, not
+
+13
+01:06:24,001 --> 01:06:26,004
+not anything's really standing out to me.
+
+14
+01:06:26,104 --> 01:06:38,419
+So sorry, this one might be a dud for you guys, but really not seeing anything standing out in that area that gets me at the stratigraphic relationship or the volcanic activity in this area.
+
+15
+01:06:38,560 --> 01:06:41,003
+Sorry about that one, but moving on to the next one.
+
+### Transcript 011
+
+1
+01:25:01,114 --> 01:25:07,996
+Jeremy here doing my next observation, which is Target 24, South Pole Aitken Basin.
+
+2
+01:25:08,897 --> 01:25:29,804
+Reid has the camera right now, so I'm just using my eyes, looking at this pretty big region, which is most of the south, you know, south side of the moon, except what's kind of cut off by the Terminator on my west.
+
+3
+01:25:31,362 --> 01:25:32,723
+The first thing I'll note is the color.
+
+4
+01:25:32,743 --> 01:25:44,251
+The thing that stands out the most with the color is the light-toned ray that's coming straight kind of through the margin of Apollo Basin and Oppenheimer.
+
+5
+01:25:44,991 --> 01:25:46,612
+It continues all the way down.
+
+6
+01:25:46,632 --> 01:25:49,755
+I can't necessarily say I see the end of it.
+
+7
+01:25:50,835 --> 01:25:53,097
+This keeps continuing down through the moon.
+
+8
+01:25:56,018 --> 01:26:08,861
+Maybe it kind of goes, it follows a linear trajectory and then maybe has one fork in it that's forking towards the west.
+
+9
+01:26:10,101 --> 01:26:12,222
+But that light tone is pretty clear.
+
+10
+01:26:12,782 --> 01:26:16,903
+The dark mare patches are also, in contrast, stand out.
+
+11
+01:26:18,245 --> 01:26:33,355
+Apollo Basin, dark blue mare, and then that's a similar kind of tone in mare to maybe a little bit of Leibniz crater.
+
+12
+01:26:35,176 --> 01:26:45,263
+And then looking more towards the Terminator, maybe a little bit also in some of the swirls of Injani have a little bit of that dark blue as well.
+
+13
+01:26:45,984 --> 01:26:51,071
+and then things are a little bit more lost from color towards the terminator.
+
+14
+01:26:54,470 --> 01:27:00,232
+And then color-wise, again, the redder tones in Apollo Basin are standing out.
+
+15
+01:27:01,813 --> 01:27:07,535
+And then also there's some like reddish tones in Mare Anjanai too.
+
+16
+01:27:08,135 --> 01:27:12,477
+It's got that right above the margin on the north side.
+
+17
+01:27:12,497 --> 01:27:15,919
+It almost seems like a little bit of like a red
+
+18
+01:27:17,059 --> 01:27:28,045
+I don't want to say glow, but a little bit of a diffuse red color that emanates out from the north of Injani, which is really pretty spectacular.
+
+19
+01:27:28,245 --> 01:27:32,008
+And it's a little bit in the swirls as well, that red tone.
+
+20
+01:27:33,989 --> 01:27:37,491
+Reddish, orangish, muted colors.
+
+21
+01:27:37,531 --> 01:27:39,212
+Not very bright, but muted.
+
+22
+01:27:41,293 --> 01:27:44,755
+In terms of structures, I can roughly see the
+
+23
+01:27:46,351 --> 01:27:51,698
+You're going to call the boundary of South Pohegan Basin at the at the northern side.
+
+24
+01:27:52,700 --> 01:27:59,029
+And then some of these right at the terminator that roughness pops out.
+
+25
+01:28:01,392 --> 01:28:03,495
+I'm not entirely sure what crater.
+
+26
+01:28:05,767 --> 01:28:12,074
+Sorry, what ridges is standing out to me right at that terminator, but it's to the east of engine.
+
+27
+01:28:12,655 --> 01:28:19,082
+I definitely looks like it's more, uh, an elongated ridge and that's, that's pretty clear.
+
+28
+01:28:19,623 --> 01:28:20,564
+Um, it's really cool.
+
+29
+01:28:20,604 --> 01:28:24,088
+All that lighting makes that topography stand out.
+
+### Transcript 012
+
+1
+01:45:01,010 --> 01:45:04,494
+Alright, my second time looking at Mare Inginii and swirls.
+
+2
+01:45:05,155 --> 01:45:09,139
+Hopefully my crew members over there are taking some good pictures of this photometric effect.
+
+3
+01:45:10,394 --> 01:45:22,965
+I'm seeing a little bit, again, this is target 28, Mari Injani's a little bit smaller than our Apollo base, and that's how I index off of Apollo base, and then just kind of move to the left in the current orientation.
+
+4
+01:45:23,005 --> 01:45:24,026
+That's how I pick that up.
+
+5
+01:45:24,946 --> 01:45:34,554
+The boundary of Mari Injani's may be a little bit more distinct in this illumination condition, so I'm glad I trained my eyes back on this a second time.
+
+6
+01:45:35,871 --> 01:45:47,006
+I am still not seeing any kind of like hue or like red or yellows or any kind of color difference like that.
+
+7
+01:45:47,026 --> 01:45:51,592
+I'm just mostly seeing some gray tonal difference so the albedo changes.
+
+8
+01:45:52,333 --> 01:46:07,438
+between those three distinct albedos that I talked about before, kind of a light tone swirl, medium tone swirl, and then all set across the darker backdrop of the Mare Inginii region.
+
+9
+01:46:08,919 --> 01:46:11,600
+The slope now has changed a little bit from
+
+10
+01:46:12,205 --> 01:46:23,812
+What I think I described earlier, the slopes and the structure that really stands out to me is now mostly at the six to nine o'clock.
+
+11
+01:46:24,092 --> 01:46:37,319
+I'm starting to pick up a lot of different features that I didn't see the first time I looked at Mari Injani and really starting to appreciate for how much that Terminator coming closer and the
+
+12
+01:46:39,164 --> 01:46:46,047
+The photometric effect is making the observation different, but hasn't made the color any different, if that makes sense.
+
+13
+01:46:46,067 --> 01:46:47,687
+So the colors are about the same.
+
+14
+01:46:47,747 --> 01:46:54,430
+I'm just getting more textural differences, particularly across the southern portion of that crater.
+
+15
+01:46:56,598 --> 01:47:09,976
+The embayment that I described before, especially at the three o'clock into the hills at the three o'clock with those kind of like bunny ears or the Mickey Mouse ears that are headed towards the three o'clock.
+
+16
+01:47:11,111 --> 01:47:13,312
+Not as sharp as when I first observed them.
+
+17
+01:47:13,792 --> 01:47:14,912
+It was an earlier target.
+
+18
+01:47:14,972 --> 01:47:15,972
+I forget which number.
+
+19
+01:47:16,873 --> 01:47:22,614
+But I'm glad I trained my eyes back on this one and hopefully gave you guys some good observations.
+
+20
+01:47:22,694 --> 01:47:32,856
+But those photos are really going to be key to hopefully zoom in and determine any kind of other photometric effect that might be going on.
+
+21
+01:47:33,037 --> 01:47:39,018
+So thanks for turning me on to this one a second time and hopefully that observations helped.
+
+### Transcript 013
+
+1
+01:50:02,122 --> 01:50:16,885
+Okay, here I am at window two and I think the next target on my list here is Buys-Ballott and I remember this one from training and I'll be honest, I'm pretty glad I get the chance to observe it because of
+
+2
+01:50:17,607 --> 01:50:18,708
+how unique it is.
+
+3
+01:50:18,728 --> 01:50:25,736
+It does have that kind of arrowhead shape where the point of the arrow is pointing to the south.
+
+4
+01:50:26,697 --> 01:50:37,389
+It has a long linear ridge in the middle that I would have believed is a central peak but it's so linear and stretched out it looks like it's rising above a relatively smooth terrain here.
+
+5
+01:50:39,692 --> 01:50:49,499
+Speaking of that smooth terrain, sort of the like upper northern end of the bottom of the crater looks pretty smooth.
+
+6
+01:50:50,099 --> 01:50:57,684
+It's got like some younger fresher craters that look like they've formed in the smooth mare.
+
+7
+01:50:58,024 --> 01:50:58,585
+They're dark
+
+8
+01:50:59,385 --> 01:51:00,286
+smooth patch.
+
+9
+01:51:01,747 --> 01:51:05,909
+But it that that sort of northern part is really, you know, quite smooth.
+
+10
+01:51:05,949 --> 01:51:12,133
+And then as you move to the south toward, you know, the other end of that linear ridge in the middle of the crater, it looks like rougher terrain.
+
+11
+01:51:12,553 --> 01:51:16,756
+And it almost looks like that rougher terrain ends in sort of like an arc.
+
+12
+01:51:17,737 --> 01:51:22,301
+that starts in the west, goes slightly up to the north, then goes back down to the east.
+
+13
+01:51:23,142 --> 01:51:29,287
+There's also another little, like, arc, almost like a slump or something on the east side of the crater.
+
+14
+01:51:29,307 --> 01:51:41,078
+I would say the east side of the crater looks, I think, like a shallower slope, whereas the west side is a steeper slope.
+
+15
+01:51:43,830 --> 01:51:53,574
+really interesting diversity in this crater from the sort of lumpy, hummocky texture to the south and the smooth texture to the north.
+
+16
+01:51:54,495 --> 01:52:07,200
+As for like color and albedo, I'd say the fresher or the smoother stuff is grayer, much grayer than the southern edge, which is like a lighter gray tone.
+
+17
+01:52:08,276 --> 01:52:22,179
+So I definitely see a kind of a distinct color difference there Looks like you guys want me to draw some comparisons about Lacus luxuriate to the south Man, that thing is is hard to kind of see and pick out.
+
+18
+01:52:22,239 --> 01:52:32,221
+It's much less Topographically notable than Buys-Ballott But really interesting feature here and
+
+19
+01:52:35,226 --> 01:52:38,088
+making sure I'm not missing any of your requests.
+
+20
+01:52:39,729 --> 01:52:41,850
+Yeah, the texture I think I covered.
+
+21
+01:52:42,570 --> 01:52:50,075
+We got the steep slope to the west, the shallower slope to the east that really has that hummocky slump-like terrain.
+
+22
+01:52:53,537 --> 01:52:55,698
+And again, rougher to the south.
+
+23
+01:52:55,778 --> 01:53:02,762
+And I mean, I still see some tiny fresher craters there in the southern rougher patch.
+
+24
+01:53:04,371 --> 01:53:10,318
+but much different than the sort of other smooth material in Lacus Luxuriae.
+
+25
+01:53:11,319 --> 01:53:14,263
+Really interesting crater and I'm excited to see what you guys make of it.
+
+### Transcript 014
+
+1
+02:00:02,088 --> 02:00:04,769
+Okay, back at Dewar Crater.
+
+2
+02:00:04,789 --> 02:00:07,531
+I'm fortunate to get a chance to look at this twice.
+
+3
+02:00:07,551 --> 02:00:16,515
+I know these different illumination conditions that I'm experiencing now might bring out some different information about morphology and about
+
+4
+02:00:17,555 --> 02:00:19,656
+composition, as I recall.
+
+5
+02:00:20,796 --> 02:00:22,496
+So let me take a look here.
+
+6
+02:00:22,976 --> 02:00:25,037
+Again, we have Dewar Crater here.
+
+7
+02:00:26,057 --> 02:00:36,219
+And again, the albedo anomaly that I think I'm looking for here comes out to the south, to the east, and actually maybe in this viewing geometry, maybe more to the north than I had initially thought.
+
+8
+02:00:36,239 --> 02:00:43,661
+I'm still not seeing, you know, a ton jump out at me in terms of morphology of this albedo anomaly.
+
+9
+02:00:44,041 --> 02:00:47,122
+Dewar Crater has a pretty sharp and defined rim from what I
+
+10
+02:00:47,402 --> 02:00:55,273
+As you can see here, it looks like sort of the western edge of Dewar Crater.
+
+11
+02:00:57,452 --> 02:01:06,854
+let's see, a bit, um, maybe more like slumped than the, than the right side, than the east side of, of Dewar crater.
+
+12
+02:01:07,454 --> 02:01:11,775
+Um, the mid, but it is a pretty, um, sharp and beautiful crater boundary there.
+
+13
+02:01:12,315 --> 02:01:23,697
+Um, again, I'm seeing the albedo anomaly over top of it, some smaller craters, um, that are significantly smaller than Dewar all the way down to almost the resolution that I can see with my naked eye here.
+
+14
+02:01:24,540 --> 02:01:39,433
+seem to be on top of the albedo anomaly, just because they do appear to be sort of like brighter and don't seem to have that darker, that darker colored material on top of the brighter craters.
+
+15
+02:01:40,453 --> 02:01:51,823
+One of the younger craters at about three o'clock from Dewar sticks out particularly to my eye as being lighter in albedo than what it's sitting on, which is that darker material I described earlier.
+
+16
+02:01:52,702 --> 02:02:17,238
+Like I said earlier, I don't really see any morphology or texture that underlies the dark albedo material, but I do definitely see what you guys are directing me to look at, which is some really interesting material that, again, kind of looks like somebody threw a powder onto a surface, and it sort of originates from about halfway through Dewar Crater itself.
+
+17
+02:02:19,942 --> 02:02:21,404
+Thanks, and I'll move on to the next target.
+
+### Transcript 015
+
+1
+02:05:02,082 --> 02:05:02,902
+Alright, this is Maria.
+
+2
+02:05:02,943 --> 02:05:13,989
+I'm gonna again talk through the Terminator because I did it once already but completely missed it the last time so I guess I'll just take a new mosaic.
+
+3
+02:05:14,609 --> 02:05:17,310
+So I'm gonna just take a higher resolution one.
+
+4
+02:05:17,370 --> 02:05:23,454
+I did just finish a mosaic before but I will do another one because I want to talk through the recording.
+
+5
+02:05:26,036 --> 02:05:28,837
+So, I am snaking my way up.
+
+6
+02:05:29,698 --> 02:05:31,339
+Oh, there's Mare Injunai.
+
+7
+02:05:31,379 --> 02:05:33,680
+I can really see that in the swirls there.
+
+8
+02:05:33,700 --> 02:05:39,282
+I'm working my way up from there, and then I'm going to snake over closer to the Terminator.
+
+9
+02:05:39,723 --> 02:05:44,625
+Right now, the Terminator is not in my view, but I'll get over there.
+
+10
+02:05:44,685 --> 02:05:53,469
+It's really interesting to see the depressions, the difference in the amount of depression that you see in these critters.
+
+11
+02:05:54,525 --> 02:05:56,187
+as I work my way up here.
+
+12
+02:05:56,267 --> 02:05:58,109
+I'm up near the North Pole now.
+
+13
+02:05:58,289 --> 02:06:00,551
+I'm gonna snake over a little bit more to the left.
+
+14
+02:06:02,453 --> 02:06:07,157
+Sounds like they're working on the toilet behind me, but glad they can get that checked out.
+
+15
+02:06:07,177 --> 02:06:09,820
+Now I'm up in Muscoviense.
+
+16
+02:06:09,840 --> 02:06:11,461
+I'm working my way back down.
+
+17
+02:06:11,902 --> 02:06:15,525
+There's that little tiny mare-filled crater not too far below it.
+
+18
+02:06:16,886 --> 02:06:18,568
+Now I'm working my way back down.
+
+19
+02:06:20,275 --> 02:06:27,720
+Making sure that I have- oh, now I'm back at Jules Verne with those scarps.
+
+20
+02:06:27,981 --> 02:06:29,202
+Back over to the left.
+
+21
+02:06:30,222 --> 02:06:32,304
+And now I have the Terminator in view.
+
+22
+02:06:32,404 --> 02:06:33,665
+There I am at that.
+
+23
+02:06:49,501 --> 02:06:56,411
+make sure that I get and now the moon is the earth is back in that view also absolutely incredible view here
 

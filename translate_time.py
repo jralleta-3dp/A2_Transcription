@@ -114,4 +114,4 @@ def translate_time(input_file, output_file):
                 for sub in srt_data:
                     f.write(f"{sub['index']}\n{sub['start_time']} --> {sub['end_time']}\n{sub['text']}\n\n")
 
-#ranslate_time(filename, None)
+translate_time(filename, None)
