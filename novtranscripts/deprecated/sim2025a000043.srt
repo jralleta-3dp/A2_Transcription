@@ -1,0 +1,8 @@
+1
+00:00:00,031 --> 00:00:03,259
+I'm Marie and I'm testing out my audio.
+
+2
+00:00:03,279 --> 00:00:04,489
+How does this config sound?
+

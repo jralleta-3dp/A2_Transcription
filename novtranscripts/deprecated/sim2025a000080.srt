@@ -1,0 +1,12 @@
+1
+00:00:01,111 --> 00:00:04,401
+This is a test of the voice recorder app.
+
+2
+00:00:04,622 --> 00:00:06,207
+Kelsey is just coming online.
+
+3
+00:00:07,612 --> 00:00:14,935
+It is 1540 here on the PCD clock, and I'm just testing to make sure this Peltor is configured properly.
+

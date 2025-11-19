@@ -1,0 +1,20 @@
+1
+00:00:01,516 --> 00:00:02,238
+This is a test.
+
+2
+00:00:02,620 --> 00:00:03,502
+Test, test, test.
+
+3
+00:00:03,743 --> 00:00:07,215
+I see my button oscillating.
+
+4
+00:00:07,716 --> 00:00:08,639
+That's good news.
+
+5
+00:00:09,462 --> 00:00:12,572
+Hopefully my PCD is in the right configuration.
+

@@ -1,0 +1,20 @@
+1
+15:40:01,516 --> 15:40:02,238
+This is a test.
+
+2
+15:40:02,620 --> 15:40:03,502
+Test, test, test.
+
+3
+15:40:03,743 --> 15:40:07,215
+I see my button oscillating.
+
+4
+15:40:07,716 --> 15:40:08,639
+That's good news.
+
+5
+15:40:09,462 --> 15:40:12,572
+Hopefully my PCD is in the right configuration.
+
